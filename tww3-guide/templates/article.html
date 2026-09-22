@@ -3,17 +3,33 @@
 {% block content %}
 <article class="article-wrap">
   <header class="article-head">
-    <div class="crumb"><a href="../{{ article.faction }}.html">{{ article.faction_short }}</a><span>›</span>{{ article.label }}</div>
+    <div class="crumb">
+      <a href="../{{ article.faction }}.html">{{ article.faction_short }}</a>
+      <span>›</span>
+      <span>{{ article.category_label }}</span>
+      <span>›</span>
+      <strong>{{ article.label }}</strong>
+    </div>
     <h1>{{ article.title }}</h1>
     <p>{{ article.description }}</p>
-    <div class="article-meta"><span>원본: <code>{{ article.source_file }}</code></span><span>문서 업데이트: {{ article.updated }}</span><span>사이트 빌드: {{ today }}</span></div>
+    <div class="article-meta">마지막 업데이트 {{ article.updated }}</div>
   </header>
+
   {% if article.toc %}
-  <details class="toc" open><summary>이 문서에서 찾기</summary><div>
-    {% for h in article.toc %}<a class="toc-l{{ h.level }}" href="#{{ h.id }}">{{ h.label }}</a>{% endfor %}
-  </div></details>
+  <nav class="article-toc" aria-label="문서 목차">
+    <strong>이 문서에서 찾기</strong>
+    <div>
+    {% for h in article.toc %}
+      {% if h.level == 2 %}<a href="#{{ h.id }}">{{ h.label }}</a>{% endif %}
+    {% endfor %}
+    </div>
+  </nav>
   {% endif %}
+
   <div class="markdown-body">{{ content|safe }}</div>
-  <footer class="article-foot">이 페이지는 Markdown 소스에서 자동 생성되었습니다. 내용 수정은 <code>content/{{ article.faction }}/{{ article.source_file }}</code>만 고치면 됩니다.</footer>
+
+  <footer class="article-foot">
+    Markdown 원본에서 자동 생성 · {{ article.source_file }}
+  </footer>
 </article>
 {% endblock %}
