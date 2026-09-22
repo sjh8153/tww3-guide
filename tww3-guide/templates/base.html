@@ -21,11 +21,16 @@
       {% for key, faction in factions.items() %}
       <section class="nav-faction">
         <a class="nav-faction-title" href="{{ '../' if article else '' }}{{ key }}.html"><span class="sigil">{{ faction.icon }}</span>{{ faction.short }}</a>
-        <div class="nav-links">
-          {% for a in articles|default([]) if a.faction == key %}
-          <a href="{{ '../' if article else '' }}{{ a.url }}" {% if article and a.slug == article.slug %}class="active"{% endif %}>{{ a.label }}</a>
-          {% endfor %}
+        {% for section in nav_sections[key] %}
+        <div class="nav-chapter">
+          <span>{{ section.label }}</span>
+          <div class="nav-links">
+            {% for a in section.articles %}
+            <a href="{{ '../' if article else '' }}{{ a.url }}" {% if article and a.slug == article.slug %}class="active"{% endif %}>{{ a.label }}</a>
+            {% endfor %}
+          </div>
         </div>
+        {% endfor %}
       </section>
       {% endfor %}
     </nav>
