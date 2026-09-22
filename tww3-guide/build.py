@@ -24,6 +24,9 @@ FACTIONS = {
     },
 }
 
+# UI 어디서든 이 순서를 공통으로 사용한다.
+FACTION_ORDER = {key: index for index, key in enumerate(FACTIONS.keys())}
+
 CATEGORY_LABELS = {
     'campaign': '캠페인·내정',
     'characters': '군주·영웅',
@@ -191,8 +194,16 @@ def build():
     public_articles = [{k:v for k,v in a.items() if k != '_html'} for a in articles]
 
     home = env.get_template('index.html')
-    recent = sorted(public_articles, key=lambda a: (a['updated'], a['faction'], -a['order']), reverse=True)[:6]
-    quick = sorted([a for a in public_articles if a['quick']], key=lambda a: (a['faction'], a['order']))[:8]
+    # 최근 업데이트는 날짜가 우선이지만, 같은 날짜 안에서는 화면의 종족 순서를 유지한다.
+    recent = sorted(
+        public_articles,
+        key=lambda a: (-int(a['updated'].replace('-', '')), FACTION_ORDER.get(a['faction'], 999), a['order'])
+    )[:6]
+    # 빠른참조도 종족 카드/사이드바와 동일한 종족 순서를 사용한다.
+    quick = sorted(
+        [a for a in public_articles if a['quick']],
+        key=lambda a: (FACTION_ORDER.get(a['faction'], 999), a['order'])
+    )[:8]
     (DOCS / 'index.html').write_text(
         home.render(**base_ctx, articles=public_articles, recent_articles=recent, quick_articles=quick),
         encoding='utf-8'
