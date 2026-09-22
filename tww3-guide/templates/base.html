@@ -10,32 +10,40 @@
 </head>
 <body data-root="{{ '../' if article else '' }}">
 <header class="topbar">
-  <a class="brand" href="{{ '../' if article else '' }}index.html"><span class="brand-mark">III</span><span><b>TWW3</b><small>개인 공략 위키</small></span></a>
+  <a class="brand" href="{{ '../' if article else '' }}index.html">
+    <span class="brand-mark">III</span>
+    <span><b>TWW3</b><small>개인 공략 위키</small></span>
+  </a>
   <button class="search-trigger" data-search-open aria-label="검색 열기">⌕ <span>검색</span><kbd>/</kbd></button>
   <button class="mobile-nav" data-nav-toggle aria-label="메뉴 열기">☰</button>
 </header>
+
 <div class="shell">
   <aside class="sidebar" data-sidebar>
     <nav>
       <a href="{{ '../' if article else '' }}index.html" class="nav-home">⌂ 전체 홈</a>
+
       {% for key, faction in factions.items() %}
       <section class="nav-faction">
-        <a class="nav-faction-title" href="{{ '../' if article else '' }}{{ key }}.html"><span class="sigil">{{ faction.icon }}</span>{{ faction.short }}</a>
+        <a class="nav-faction-title" href="{{ '../' if article else '' }}{{ key }}.html">
+          <span class="sigil">{{ faction.icon }}</span>{{ faction.short }}
+        </a>
+
+        <div class="nav-category-list">
         {% for section in nav_sections[key] %}
-        <div class="nav-chapter">
-          <span>{{ section.label }}</span>
-          <div class="nav-links">
-            {% for a in section.articles %}
-            <a href="{{ '../' if article else '' }}{{ a.url }}" {% if article and a.slug == article.slug %}class="active"{% endif %}>{{ a.label }}</a>
-            {% endfor %}
-          </div>
-        </div>
+          <a href="{{ '../' if article else '' }}{{ key }}.html#chapter-{{ section.key }}"
+             {% if article and article.faction == key and article.category == section.key %}class="active"{% endif %}>
+            <span>{{ section.label }}</span><small>{{ section.articles|length }}</small>
+          </a>
         {% endfor %}
+        </div>
       </section>
       {% endfor %}
     </nav>
-    <div class="sidebar-foot">Markdown 기반 · 마지막 빌드 {{ today }}</div>
+
+    <div class="sidebar-foot">마지막 빌드 {{ today }}</div>
   </aside>
+
   <main class="main">{% block content %}{% endblock %}</main>
 </div>
 
