@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0e0f12">
+  <title>캐세이 포병·지원 전쟁기계 가이드 · TWW3 공략 위키</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <script defer src="../static/app.js"></script>
+</head>
+<body data-root="../">
+<header class="topbar">
+  <a class="brand" href="../index.html"><span class="brand-mark">III</span><span><b>TWW3</b><small>개인 공략 위키</small></span></a>
+  <button class="search-trigger" data-search-open aria-label="검색 열기">⌕ <span>검색</span><kbd>/</kbd></button>
+  <button class="mobile-nav" data-nav-toggle aria-label="메뉴 열기">☰</button>
+</header>
+<div class="shell">
+  <aside class="sidebar" data-sidebar>
+    <nav>
+      <a href="../index.html" class="nav-home">⌂ 전체 홈</a>
+      
+      <section class="nav-faction">
+        <a class="nav-faction-title" href="../cathay.html"><span class="sigil">龍</span>캐세이</a>
+        <div class="nav-links">
+          
+          <a href="../articles/cathay_skill_guide.html" >스킬트리</a>
+          
+          <a href="../articles/cathay_units_artillery.html" class="active">포병·지원</a>
+          
+          <a href="../articles/cathay_units_cavalry.html" >기병</a>
+          
+          <a href="../articles/cathay_units_melee.html" >근접 보병</a>
+          
+          <a href="../articles/cathay_units_ranged.html" >원거리 보병</a>
+          
+        </div>
+      </section>
+      
+      <section class="nav-faction">
+        <a class="nav-faction-title" href="../bretonnia.html"><span class="sigil">⚜</span>브레토니아</a>
+        <div class="nav-links">
+          
+          <a href="../articles/bretonnia_campaign_guide.html" >캠페인 운영</a>
+          
+          <a href="../articles/bretonnia_cavalry_controls.html" >기병 전투 조작</a>
+          
+          <a href="../articles/bretonnia_early_game_economy_armies.html" >초반 경제·군단</a>
+          
+          <a href="../articles/bretonnia_lords_heroes.html" >군주·영웅</a>
+          
+          <a href="../articles/bretonnia_skill_guide.html" >스킬트리</a>
+          
+        </div>
+      </section>
+      
+    </nav>
+    <div class="sidebar-foot">Markdown 기반 · 마지막 빌드 2026-09-22</div>
+  </aside>
+  <main class="main">
+<article class="article-wrap">
+  <header class="article-head">
+    <div class="crumb"><a href="../cathay.html">캐세이</a><span>›</span>포병·지원</div>
+    <h1>캐세이 포병·지원 전쟁기계 가이드</h1>
+    <p>대포·화우·나침반·전쟁북</p>
+    <div class="article-meta"><span>원본: <code>cathay_units_artillery.md</code></span><span>문서 업데이트: 2026-09-22</span><span>사이트 빌드: 2026-09-22</span></div>
+  </header>
+  
+  <details class="toc" open><summary>이 문서에서 찾기</summary><div>
+    <a class="toc-l2" href="#1-대포">1. 대포</a><a class="toc-l2" href="#2-화우-로켓">2. 화우 로켓</a><a class="toc-l2" href="#3-오행-전쟁-나침반">3. 오행 전쟁 나침반</a><a class="toc-l2" href="#4-장고-전쟁북">4. 장고 전쟁북</a><a class="toc-l2" href="#포병-지원기-전체-요약표">포병·지원기 전체 요약표</a><a class="toc-l2" href="#핵심-철학-표적-처리와-아군-지원을-나눈다">핵심 철학: 표적 처리와 아군 지원을 나눈다</a>
+  </div></details>
+  
+  <div class="markdown-body"><p><strong>대화에서 확정한 운용 기준을 정리한 플레이 메모이며 최신 패치 전체 재검증 문서는 아님.</strong></p>
+<p>원본: 대화 「케세이」의 포병 설명회. 정리일: 2026-09-09. 수치와 자동전투 체감은 설명회 기준이며, 역할과 운용을 빠르게 떠올리는 데 필요한 내용만 압축했다. AP는 장갑관통을 뜻한다.</p>
+<p>대상은 <strong>대포·화우 로켓·오행 전쟁 나침반·장고 전쟁북</strong>. 대포와 화우는 포병, 나침반과 전쟁북은 지원 전차로 구분한다. 천등·천주는 이번 범위에서 제외한다.</p>
+<p>추천 카드 수는 각 유닛을 채용할 때의 기준이며 전부 합산하라는 뜻은 아니다. 사격 중심 방진은 <strong>대포 1 + 화우 1</strong>로 시작하고, 상대 구성과 군단 슬롯에 맞춰 지원기를 추가한다.</p>
+<h2 id="1-대포">1. 대포<a class="heading-anchor" href="#1-대포" aria-label="이 섹션 링크">#</a></h2>
+<p><strong>역할:</strong> 멀리 있는 고가치 대형 표적을 AP 직사로 깎는 포병. 화우와 표적을 나눠 맡는다.</p>
+<ul>
+<li>핵심: <strong>4문 / 모집비 900·유지비 225 / 음 조화.</strong> 장갑 20으로 물리면 취약하다.</li>
+<li><strong>잘 잡는 상대:</strong> 괴수·괴수보병·기병·괴수기병, 대형 군주·영웅. 적 포병과 성문·성벽·탑 등 구조물도 담당한다. 관통탄이 여러 모델을 지나갈 수 있는 대형이면 효율 상승.</li>
+<li><strong>약점:</strong> 사선이 막히면 화력이 멈춘다. 싸구려 보병도 죽일 수 있지만, 더 비싼 대형 표적을 놔두고 탄을 쓰면 손해다. 근접 침투에도 약하다.</li>
+<li><strong>배치:</strong> 후방의 완만한 언덕 또는 전열 사이 사격 통로. 큰 괴수는 전열 너머로 쏘기 쉬워도 사선 확보를 생략하지 않는다. 주변 양 예비대로 <strong>호위 + 조화</strong>를 함께 챙긴다.</li>
+</ul>
+<p><strong>추천 카드 수:</strong> 보통 <strong>1~2카드</strong>, 괴수 비중이 매우 높으면 <strong>3카드</strong> 고려. 대포만 도배하면 보병 물량 처리가 답답해진다.</p>
+<p><strong>언제 사용:</strong> 고가치 대형 대응과 공성 구조물 파괴가 필요할 때. 기본 대포 1 + 화우 1에서 적 괴수·기병 비중이 높아지면 대포를 늘린다.</p>
+<p><strong>자동전투 vs 수동:</strong> 설명회에서는 자동에서도 비교적 안정적으로 평가했다. 수동에서 사선을 잡고 괴수·기병·대형 군주를 직접 지정하면 가치가 더 높아진다.</p>
+<p><strong>캐세이 맛:</strong> 전열이 버티고 석궁이 지속사격하는 음양 방진 안에서 큰 표적만 골라 처리한다. 양 호위병이 대포 보호와 재장전·리더십 조화를 함께 제공하는 구조.</p>
+<p><strong>한 줄 평가:</strong> <strong>큰 놈 전담 처리반. 쥐노예만 쏘고 있으면 표적 지정부터 다시 보자.</strong></p>
+<hr />
+<h2 id="2-화우-로켓">2. 화우 로켓<a class="heading-anchor" href="#2-화우-로켓" aria-label="이 섹션 링크">#</a></h2>
+<p><strong>역할:</strong> 밀집 보병에 폭발 화력을 뿌리는 광역 포병. 정밀 저격보다 넓은 부대의 여러 모델을 동시에 때리는 것이 본업.</p>
+<ul>
+<li>핵심: <strong>4문 / 사거리 360 / 탄약 12 / 모집비 1200·유지비 300.</strong> 설명회 기준 로켓 <strong>7발 연사</strong>, 폭발·화염 공격. 탄약은 넉넉하지 않으므로 표적을 고른다.</li>
+<li><strong>잘 잡는 상대:</strong> 보병떼, 밀집 사격병, 방진, 좁은 길·성벽 위·공성 골목에 뭉친 병력.</li>
+<li><strong>약점:</strong> 부정확해서 단일괴수·작고 빠른 표적에는 비효율적이다. 아군과 붙은 적을 계속 쏘면 <strong>오폭</strong>이 발생한다. 초반 기병 등에 탄약을 낭비하지 않는다.</li>
+<li><strong>배치:</strong> 사격진 뒤의 안전한 후방. 곡사로 전열 너머를 노리기 편하지만 높은 장애물과 너무 가까운 적은 사격을 방해한다.</li>
+<li><strong>사격 관리:</strong> 접근 중인 밀집 주력을 먼저 포격한다. 근접전이 시작되면 <strong>자동사격을 끄거나 아군과 떨어진 적 후방 부대로 표적 전환</strong>. 적이 뭉쳤다는 이유만으로 접촉면에 계속 쏘지 않는다.</li>
+</ul>
+<p><strong>추천 카드 수:</strong> 보통 <strong>1~2카드</strong>, 스케이븐·그린스킨처럼 보병 물량이 많으면 <strong>2~3카드</strong> 고려.</p>
+<p><strong>언제 사용:</strong> 보병 다수와 밀집 대형을 상대할 때. 적이 괴수 중심이면 화우를 늘리기보다 대포 비중을 올린다.</p>
+<p><strong>자동전투 vs 수동:</strong> 설명회에서는 자동에서도 보병 상대로 킬을 잘 뽑는 편으로 평가했다. 수동에서는 밀집 순간을 노리면 성과가 크게 오르지만, 탄약 낭비와 오폭도 직접 관리해야 한다.</p>
+<p><strong>캐세이 맛:</strong> 정적 방진 앞으로 몰려오는 적을 광역 화력으로 줄인다. 전열이 적을 묶는 구조와 잘 맞지만, 교전 후에는 아군과의 거리를 반드시 확인한다.</p>
+<p><strong>한 줄 평가:</strong> <strong>보병 물량 삭제기. 옥전사까지 삭제하면 그건 운용 사고다.</strong></p>
+<hr />
+<h2 id="3-오행-전쟁-나침반">3. 오행 전쟁 나침반<a class="heading-anchor" href="#3-오행-전쟁-나침반" aria-label="이 섹션 링크">#</a></h2>
+<p><strong>역할:</strong> 제한 횟수의 천상마법과 주문·조화 시너지를 제공하는 마법 지원 전차. 지속 포격을 하는 대포 대체재는 아니다.</p>
+<ul>
+<li>핵심: <strong>천상의 혜성 2회 + 천상의 번개 2회 / 조화 증폭 +25% / 유지비 238.</strong> 단일개체, <strong>체력 6,240·장갑 80·근방 20</strong>. 버틸 여지는 있어도 근접 주력으로 쓰기 어렵다.</li>
+<li><strong>주요 기능:</strong> 무료 천상마법으로 중요한 밀집 표적을 타격한다. <strong>원소 바람 숙련</strong>은 같은 특성 보유 유닛이 군대에 둘 이상 있을 때 주문 강도 시너지를 제공한다.</li>
+<li><strong>잘 맞는 상황:</strong> 전열에 붙잡혀 이동이 제한된 보병, 좁게 뭉친 적, 마법 중심 군단의 방진전. 혜성은 지연 타격이므로 움직이는 표적보다 고정된 덩어리에 사용한다.</li>
+<li><strong>약점:</strong> 마법 사용 횟수가 제한되고 혜성을 피하면 화력 손실이 크다. 대형킬러에게 취약하며, 높은 체력·장갑만 보고 반복 돌격이나 장기 근접전을 맡기지 않는다.</li>
+<li><strong>배치:</strong> 전열과 사격진 사이의 보호받는 위치에서 주변 조화를 증폭한다. 혜성은 아군과 맞붙은 접촉면보다 <strong>적 대형 뒤쪽의 밀집 지점</strong>을 노려 오폭 위험을 줄인다.</li>
+</ul>
+<p><strong>추천 카드 수:</strong> <strong>0~1카드</strong>. 마법 중심 군단이면 1카드, 단순 화력 보강 목적이면 대포·화우가 더 직관적이다.</p>
+<p><strong>언제 사용:</strong> 천문술사 등과 마법 시너지를 강화하고, 결정적 순간의 광역마법을 더 확보하고 싶을 때. 이미 마법사가 있어도 자동 채용할 필요는 없으며, 추가 마법·시너지와 사격 슬롯 중 필요한 것을 고른다.</p>
+<p><strong>자동전투 vs 수동:</strong> 설명회에서는 <strong>수동에서 훨씬 좋은 지원기</strong>로 평가했다. 혜성 타이밍과 표적 선택이 중요하며, 킬수만으로 주문·조화 지원의 가치를 판단하지 않는다.</p>
+<p><strong>캐세이 맛:</strong> 천문기구가 전장에 나와 혜성을 떨어뜨리고 아군 마법과 조화를 강화한다. 캐세이의 마법·방진 지원 성격이 강하다.</p>
+<p><strong>한 줄 평가:</strong> <strong>혜성 버튼과 마법 시너지를 사는 카드. 대포처럼 계속 쏘길 기대하면 실망한다.</strong></p>
+<hr />
+<h2 id="4-장고-전쟁북">4. 장고 전쟁북<a class="heading-anchor" href="#4-장고-전쟁북" aria-label="이 섹션 링크">#</a></h2>
+<p><strong>역할:</strong> 주변 전열과 사격진을 강화하는 지원 전차. 직접 사격이나 킬보다 버프 범위와 모드 선택이 중요하다.</p>
+<ul>
+<li>핵심: <strong>버프 범위 100 / 조화 증폭 +50% / 음·양 모두 제공 / 유지비 275.</strong> 단일개체, <strong>체력 6,232·장갑 80·근방 20</strong>, 불굴.</li>
+<li><strong>방어 모드 — 대도시의 보루:</strong> <strong>장갑 +24·돌격 방어</strong>. 적 돌격을 받아내는 시점에 사용한다.</li>
+<li><strong>공격 모드 — 천룡황제의 경멸:</strong> <strong>근공 +8·재장전 스킬 +10·심리 면역</strong>. 전열이 붙고 아군 사격진이 화력을 넣는 시점에 전환한다. 재장전 스킬 +10을 사격 속도 +10%로 바꿔 읽지 않는다.</li>
+<li><strong>주요 기능:</strong> 전열의 버티는 힘, 사격진의 재장전, 주변 조화를 지원한다. 위 두 모드는 상황에 따라 전환하는 운용 기준으로 기억한다.</li>
+<li><strong>약점:</strong> 단일괴수·대형킬러·AP 사격. 불굴은 패주하지 않는다는 뜻이지 무적이라는 뜻이 아니다. 근접 전투력은 낮으므로 혼자 전열에 세우지 않는다.</li>
+<li><strong>배치:</strong> 전열 바로 뒤, 석궁진 사이의 중심부. 버프 범위 안에 지원할 전열·사격병이 들어오는지 확인하고 후방 침투로부터 보호한다.</li>
+<li><strong>중복 주의:</strong> 설명회 기준 <strong>조화 증폭은 가장 강한 것 하나만 적용</strong>된다. 전쟁북 두 장으로 +100%를 만들거나 나침반과 +75%로 합산하는 식으로 계산하지 않는다.</li>
+</ul>
+<p><strong>추천 카드 수:</strong> <strong>0~1카드</strong>. 설명회의 표준 방진 운용에서는 중복 조화 증폭을 노린 2카드 채용을 권하지 않는다.</p>
+<p><strong>언제 사용:</strong> 묘영처럼 사격 비중이 높은 방진에서 군단 전체의 효율을 강화하고 싶을 때. 기본 포병 구성을 갖춘 뒤 지원 슬롯으로 고려한다.</p>
+<p><strong>자동전투 vs 수동:</strong> 설명회에서는 자동 체감이 애매할 수 있는 지원기로 평가했다. 수동에서 범위와 버프 전환을 맞추면 가치가 잘 드러난다. 개인 킬수가 낮아도 주변 병력이 더 잘 버티고 쏘면 제 역할을 한 것이다.</p>
+<p><strong>캐세이 맛:</strong> 진형 유지·전열 방어·음양 조화·사격 재장전을 한 카드로 묶는다. 네 유닛 중 캐세이 방진의 성격을 가장 직접적으로 강화한다.</p>
+<p><strong>한 줄 평가:</strong> <strong>킬은 남들이 먹고 북은 판을 깐다. 군단 회식비 카드.</strong></p>
+<hr />
+<h2 id="포병-지원기-전체-요약표">포병·지원기 전체 요약표<a class="heading-anchor" href="#포병-지원기-전체-요약표" aria-label="이 섹션 링크">#</a></h2>
+<table>
+<thead>
+<tr>
+  <th>유닛</th>
+  <th>핵심 역할·주 대상</th>
+  <th>주요 약점·주의</th>
+  <th>배치</th>
+  <th>추천 카드 수</th>
+  <th>사용 기준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>대포</td>
+  <td>괴수·기병·대형 고가치 표적, 포병·구조물</td>
+  <td>직사 사선, 근접 침투, 잡졸에 탄 낭비</td>
+  <td>후방 완만한 언덕·전열 사이 통로, 양 호위</td>
+  <td>1~2, 대형 다수면 3</td>
+  <td>대형 대응·공성 파괴 보강</td>
+</tr>
+<tr>
+  <td>화우 로켓</td>
+  <td>밀집 보병·사격병 광역 처리</td>
+  <td>단일 표적 비효율, 탄약 12, 아군 오폭</td>
+  <td>사격진 뒤 안전한 후방</td>
+  <td>1~2, 물량전 2~3</td>
+  <td>보병 물량 대응</td>
+</tr>
+<tr>
+  <td>오행 전쟁 나침반</td>
+  <td>혜성·번개, 주문 강도·조화 지원</td>
+  <td>횟수 제한, 혜성 회피, 대형킬러·근접전</td>
+  <td>전열과 사격진 사이 보호 위치</td>
+  <td>0~1</td>
+  <td>마법 중심 군단의 시너지 강화</td>
+</tr>
+<tr>
+  <td>장고 전쟁북</td>
+  <td>방어·공격 모드, 조화·재장전 지원</td>
+  <td>대형킬러·AP 사격, 범위 이탈, 증폭 중복 불가</td>
+  <td>전열 뒤·사격진 중심</td>
+  <td>0~1</td>
+  <td>사격 방진 전체 효율 강화</td>
+</tr>
+</tbody>
+</table>
+<h2 id="핵심-철학-표적-처리와-아군-지원을-나눈다">핵심 철학: 표적 처리와 아군 지원을 나눈다<a class="heading-anchor" href="#핵심-철학-표적-처리와-아군-지원을-나눈다" aria-label="이 섹션 링크">#</a></h2>
+<blockquote>
+<p><strong>대포=큰 놈, 화우=많은 놈, 나침반=마법지원, 전쟁북=아군버프</strong></p>
+</blockquote>
+<p>기본은 <strong>대포 1 + 화우 1</strong>. 적의 큰 표적은 대포로, 밀집 보병은 화우로 줄인다. 방진 전체를 강화하려면 전쟁북, 마법 시너지를 더하려면 나침반을 고려한다.</p>
+<p><strong>전투 중 기억 순서:</strong> 대포 사선·대형 표적 확인 → 화우 밀집 표적 포격 → 근접전 시작 시 화우 오폭 통제 → 나침반 마법을 고정된 적 덩어리에 사용 → 전쟁북은 돌격 방어에서 교전·사격 지원으로 전환.</p>
+<p>전열은 적을 붙잡고, 사격병은 지속 화력을 넣고, 포병은 위험한 표적과 물량을 미리 줄인다. 지원기는 그 구조가 더 잘 돌아가게 한다. <strong>포병은 표적을 보고, 지원기는 아군을 봐라.</strong></p>
+</div>
+  <footer class="article-foot">이 페이지는 Markdown 소스에서 자동 생성되었습니다. 내용 수정은 <code>content/cathay/cathay_units_artillery.md</code>만 고치면 됩니다.</footer>
+</article>
+</main>
+</div>
+
+<div class="search-modal" data-search-modal hidden>
+  <div class="search-panel">
+    <div class="search-head">
+      <input data-search-input type="search" placeholder="루앙, 사이클 차지, 옥전사…" autocomplete="off">
+      <button data-search-close aria-label="검색 닫기">✕</button>
+    </div>
+    <div class="search-hint">제목·본문·소제목 전체 검색 · <kbd>Esc</kbd> 닫기</div>
+    <div class="search-results" data-search-results></div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0e0f12">
+  <title>브레토니아 기병 수동조작·전투 컨트롤 가이드 · TWW3 공략 위키</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <script defer src="../static/app.js"></script>
+</head>
+<body data-root="../">
+<header class="topbar">
+  <a class="brand" href="../index.html"><span class="brand-mark">III</span><span><b>TWW3</b><small>개인 공략 위키</small></span></a>
+  <button class="search-trigger" data-search-open aria-label="검색 열기">⌕ <span>검색</span><kbd>/</kbd></button>
+  <button class="mobile-nav" data-nav-toggle aria-label="메뉴 열기">☰</button>
+</header>
+<div class="shell">
+  <aside class="sidebar" data-sidebar>
+    <nav>
+      <a href="../index.html" class="nav-home">⌂ 전체 홈</a>
+      
+      <section class="nav-faction">
+        <a class="nav-faction-title" href="../cathay.html"><span class="sigil">龍</span>캐세이</a>
+        <div class="nav-links">
+          
+          <a href="../articles/cathay_skill_guide.html" >스킬트리</a>
+          
+          <a href="../articles/cathay_units_artillery.html" >포병·지원</a>
+          
+          <a href="../articles/cathay_units_cavalry.html" >기병</a>
+          
+          <a href="../articles/cathay_units_melee.html" >근접 보병</a>
+          
+          <a href="../articles/cathay_units_ranged.html" >원거리 보병</a>
+          
+        </div>
+      </section>
+      
+      <section class="nav-faction">
+        <a class="nav-faction-title" href="../bretonnia.html"><span class="sigil">⚜</span>브레토니아</a>
+        <div class="nav-links">
+          
+          <a href="../articles/bretonnia_campaign_guide.html" >캠페인 운영</a>
+          
+          <a href="../articles/bretonnia_cavalry_controls.html" class="active">기병 전투 조작</a>
+          
+          <a href="../articles/bretonnia_early_game_economy_armies.html" >초반 경제·군단</a>
+          
+          <a href="../articles/bretonnia_lords_heroes.html" >군주·영웅</a>
+          
+          <a href="../articles/bretonnia_skill_guide.html" >스킬트리</a>
+          
+        </div>
+      </section>
+      
+    </nav>
+    <div class="sidebar-foot">Markdown 기반 · 마지막 빌드 2026-09-22</div>
+  </aside>
+  <main class="main">
+<article class="article-wrap">
+  <header class="article-head">
+    <div class="crumb"><a href="../bretonnia.html">브레토니아</a><span>›</span>기병 전투 조작</div>
+    <h1>브레토니아 기병 수동조작·전투 컨트롤 가이드</h1>
+    <p>사이클 차지·랜스·그룹·단축키</p>
+    <div class="article-meta"><span>원본: <code>bretonnia_cavalry_controls.md</code></span><span>문서 업데이트: 2026-09-22</span><span>사이트 빌드: 2026-09-22</span></div>
+  </header>
+  
+  <details class="toc" open><summary>이 문서에서 찾기</summary><div>
+    <a class="toc-l2" href="#가장-중요한-원칙">가장 중요한 원칙</a><a class="toc-l2" href="#기본-사이클-차지">기본 사이클 차지</a><a class="toc-l2" href="#이탈-방향">이탈 방향</a><a class="toc-l2" href="#랜스-진형">랜스 진형</a><a class="toc-l2" href="#여러-기병을-한꺼번에-들이박는-법">여러 기병을 한꺼번에 들이박는 법</a><a class="toc-l3" href="#그룹-지정">그룹 지정</a><a class="toc-l2" href="#진형-통째로-이동">진형 통째로 이동</a><a class="toc-l2" href="#shift-경로-지정">Shift 경로 지정</a><a class="toc-l2" href="#그룹-추천">그룹 추천</a><a class="toc-l2" href="#농민-전열-운용">농민 전열 운용</a><a class="toc-l2" href="#두-기병이-한-적을-때릴-때">두 기병이 한 적을 때릴 때</a><a class="toc-l2" href="#비행기병-운용">비행기병 운용</a><a class="toc-l3" href="#페가서스-계열">페가서스 계열</a><a class="toc-l3" href="#왕실-히포그리프-기사">왕실 히포그리프 기사</a><a class="toc-l2" href="#패주병-추격">패주병 추격</a><a class="toc-l2" href="#카메라-감상">카메라 감상</a><a class="toc-l2" href="#일시정지">일시정지</a><a class="toc-l2" href="#손가락용-치트시트">손가락용 치트시트</a><a class="toc-l2" href="#한-줄-정리">한 줄 정리</a>
+  </div></details>
+  
+  <div class="markdown-body"><p>기준: 현재 대화에서 정리한 수동전투 조작 메모.
+목표: 병종 설명보다 실제 마우스/단축키 운용법을 빠르게 다시 떠올리는 용도.</p>
+<h2 id="가장-중요한-원칙">가장 중요한 원칙<a class="heading-anchor" href="#가장-중요한-원칙" aria-label="이 섹션 링크">#</a></h2>
+<blockquote>
+<p><strong>박을 땐 적을 찍고, 빠질 땐 땅을 찍는다.</strong></p>
+</blockquote>
+<ul>
+<li>적 유닛 우클릭 = 공격/돌격 명령</li>
+<li>빈 땅 우클릭 = 이동/이탈 명령</li>
+</ul>
+<p>적 뒤 공터를 찍는다고 지나가면서 자동 돌격 판정이 들어가는 게 아니다.
+제대로 된 돌격을 넣으려면 <strong>적 부대를 직접 우클릭</strong>한다.</p>
+<h2 id="기본-사이클-차지">기본 사이클 차지<a class="heading-anchor" href="#기본-사이클-차지" aria-label="이 섹션 링크">#</a></h2>
+<ol>
+<li>측면/후방으로 이동</li>
+<li>랜스 진형 ON</li>
+<li>적 유닛 직접 우클릭</li>
+<li>충돌 확인</li>
+<li>몇 초 근접공격</li>
+<li>랜스 OFF</li>
+<li>가까운 바깥쪽 빈 땅 우클릭</li>
+<li>거리 확보</li>
+<li>방향 재정렬</li>
+<li>다시 랜스 ON → 재돌격</li>
+</ol>
+<p>초보 기준 감각:</p>
+<blockquote>
+<p><strong>박음 → 5~10초 팸 → 뺌 → 거리 벌림 → 다시 박음</strong></p>
+</blockquote>
+<p>단, 상대가 궁병/포병/패주병처럼 약하면 굳이 빼지 않고 그대로 죽여도 된다.</p>
+<h2 id="이탈-방향">이탈 방향<a class="heading-anchor" href="#이탈-방향" aria-label="이 섹션 링크">#</a></h2>
+<p>적 부대를 관통해서 반대편으로 빠지려 하지 않는다.</p>
+<p>좋은 이탈:</p>
+<ul>
+<li>들어온 방향</li>
+<li>가장 가까운 측면 공터</li>
+<li>적 모델이 적은 쪽</li>
+</ul>
+<p>나쁜 이탈:</p>
+<ul>
+<li>적 부대 한가운데를 뚫고 반대편으로 이동</li>
+</ul>
+<p>이탈 명령을 한 번 줬는데 몇 모델이 붙잡히면 <strong>빈 땅 우클릭을 다시 반복</strong>한다.</p>
+<h2 id="랜스-진형">랜스 진형<a class="heading-anchor" href="#랜스-진형" aria-label="이 섹션 링크">#</a></h2>
+<p>랜스 진형은 사실상 <strong>돌격 모드</strong>라고 이해하면 쉽다.</p>
+<p>추천:</p>
+<ul>
+<li>우회/일반 이동 = OFF</li>
+<li>돌격 직전 = ON</li>
+<li>충돌 후 이탈 = OFF</li>
+</ul>
+<p>계속 켜두면 선회와 이탈이 답답해질 수 있다.</p>
+<p>주의:</p>
+<blockquote>
+<p>랜스 진형을 켰다고 준비된 창병 정면돌격이 좋은 판단으로 바뀌지는 않는다.</p>
+</blockquote>
+<h2 id="여러-기병을-한꺼번에-들이박는-법">여러 기병을 한꺼번에 들이박는 법<a class="heading-anchor" href="#여러-기병을-한꺼번에-들이박는-법" aria-label="이 섹션 링크">#</a></h2>
+<p>기병 여러 부대를 일렬로 세운 뒤 잠금 그룹을 사용한다.</p>
+<h3 id="그룹-지정">그룹 지정<a class="heading-anchor" href="#그룹-지정" aria-label="이 섹션 링크">#</a></h3>
+<ul>
+<li>여러 유닛 선택</li>
+<li><code>Ctrl + 숫자</code>로 그룹 지정</li>
+<li>자물쇠를 잠가 현재 상대 위치관계를 유지</li>
+</ul>
+<p>잠금 그룹 상태에서 적 전열에 공격 명령을 내리면 여러 유닛이 전부 한 적에게 뭉치기보다 각자 전방의 표적을 나눠 물기 쉬워진다.</p>
+<p>주의:</p>
+<ul>
+<li>AI 표적 배분이 완벽하지 않다.</li>
+<li>창병/할버드/괴수가 섞여 있으면 직접 표적 지정이 낫다.</li>
+</ul>
+<h2 id="진형-통째로-이동">진형 통째로 이동<a class="heading-anchor" href="#진형-통째로-이동" aria-label="이 섹션 링크">#</a></h2>
+<p>여러 유닛을 원하는 진형으로 배치한 뒤:</p>
+<ul>
+<li><code>Alt + 좌클릭 드래그</code> = 현재 진형을 유지한 채 통째로 이동</li>
+<li>Alt 드래그 중 <code>Ctrl</code> = 진형 회전</li>
+</ul>
+<p>브레토니아는 기병 조작에 손을 써야 하므로 보병/궁병 진형을 일일이 다시 배치하지 않고 통째로 움직이는 게 중요하다.</p>
+<h2 id="shift-경로-지정">Shift 경로 지정<a class="heading-anchor" href="#shift-경로-지정" aria-label="이 섹션 링크">#</a></h2>
+<p>기병 우회에 유용.</p>
+<ul>
+<li>적 정면을 최단거리로 가로지르지 않게 한다.</li>
+<li>측면 바깥 → 후방 → 돌격 준비 위치 순으로 경로를 꺾어준다.</li>
+</ul>
+<p>즉:</p>
+<blockquote>
+<p><strong>우회 경로는 Shift, 돌격은 적 직접 우클릭.</strong></p>
+</blockquote>
+<h2 id="그룹-추천">그룹 추천<a class="heading-anchor" href="#그룹-추천" aria-label="이 섹션 링크">#</a></h2>
+<p>초보용:</p>
+<ul>
+<li>1번 = 왼쪽 기사대</li>
+<li>2번 = 오른쪽 기사대</li>
+<li>3번 = 농민 전열</li>
+<li>4번 = 궁병</li>
+<li>5번 = 루앙/영웅</li>
+</ul>
+<p>핵심은 <strong>기병 6~8카드를 전부 개별로 조작하지 않는 것</strong>.</p>
+<p>처음엔 좌우 2카드씩 정도만 직접 다루는 게 좋다.</p>
+<h2 id="농민-전열-운용">농민 전열 운용<a class="heading-anchor" href="#농민-전열-운용" aria-label="이 섹션 링크">#</a></h2>
+<p>농민 전열은 잠금 그룹으로 묶고 적 전열과 붙게 만든 뒤 손을 뗀다.</p>
+<p>브레토니아 수동전투에서 플레이어의 시선 우선순위:</p>
+<ol>
+<li>기병</li>
+<li>루앙/팔라딘</li>
+<li>마법</li>
+<li>농민</li>
+</ol>
+<blockquote>
+<p>농민 칼싸움 구경하는 동안 기사들이 창병한테 갈리고 있으면 손해다.</p>
+</blockquote>
+<h2 id="두-기병이-한-적을-때릴-때">두 기병이 한 적을 때릴 때<a class="heading-anchor" href="#두-기병이-한-적을-때릴-때" aria-label="이 섹션 링크">#</a></h2>
+<p>같은 방향에서 겹쳐 박지 않는 것이 좋다.</p>
+<p>좋은 형태:</p>
+<ul>
+<li>한 부대는 왼쪽</li>
+<li>한 부대는 오른쪽</li>
+<li>또는 앞/뒤에서 동시에 압박</li>
+</ul>
+<p>이유:</p>
+<ul>
+<li>기사끼리 길막 감소</li>
+<li>적 포위 효과 상승</li>
+<li>이탈도 쉬움</li>
+</ul>
+<h2 id="비행기병-운용">비행기병 운용<a class="heading-anchor" href="#비행기병-운용" aria-label="이 섹션 링크">#</a></h2>
+<p>비행기병의 장점은 <strong>정면전을 잘하는 게 아니라 정면전을 할 필요가 없다는 것</strong>.</p>
+<h3 id="페가서스-계열">페가서스 계열<a class="heading-anchor" href="#페가서스-계열" aria-label="이 섹션 링크">#</a></h3>
+<p>역할:</p>
+<ul>
+<li>포병 습격</li>
+<li>궁병 물기</li>
+<li>비행유닛/기병 요격</li>
+<li>고립된 적 지원부대 제거</li>
+<li>패주 직전 부대 마무리</li>
+</ul>
+<p>운용:</p>
+<blockquote>
+<p>날아감 → 약한/중요한 곳 착륙 → 짧게 싸움 → 이탈/재이륙 → 다른 곳 출동</p>
+</blockquote>
+<p>즉 <strong>전장 벌쳐/응급출동팀</strong>.</p>
+<h3 id="왕실-히포그리프-기사">왕실 히포그리프 기사<a class="heading-anchor" href="#왕실-히포그리프-기사" aria-label="이 섹션 링크">#</a></h3>
+<ul>
+<li>페가서스보다 지상 난전과 강한 표적 상대에 강함</li>
+<li>그래도 할버드 여러 부대 정면에 박아두고 잊는 식으로 쓰면 안 됨</li>
+</ul>
+<h2 id="패주병-추격">패주병 추격<a class="heading-anchor" href="#패주병-추격" aria-label="이 섹션 링크">#</a></h2>
+<p>전투 중반까지 기사 = 충격기병.
+전투 후반 기사 = <strong>살인청소차</strong>.</p>
+<p>패주한 적을 끝까지 추격해 개체 수를 줄이면 캠페인에서 다음 턴 재전투 부담이 크게 줄어든다.</p>
+<h2 id="카메라-감상">카메라 감상<a class="heading-anchor" href="#카메라-감상" aria-label="이 섹션 링크">#</a></h2>
+<p>보고 싶은 부대 선택 → <code>Insert</code></p>
+<ul>
+<li>부대 시점 추적 카메라</li>
+<li>기사 돌격 장면 감상에 좋음</li>
+<li><code>K</code>로 UI를 숨기면 시네마틱 감상 가능</li>
+</ul>
+<p>주의:</p>
+<blockquote>
+<p>30초 감상하고 나오면 반대쪽 전선이 사망해 있을 수 있다.</p>
+</blockquote>
+<h2 id="일시정지">일시정지<a class="heading-anchor" href="#일시정지" aria-label="이 섹션 링크">#</a></h2>
+<p>초보일수록 적극 활용한다.</p>
+<ul>
+<li>기병 표적 지정</li>
+<li>루앙 표적 지정</li>
+<li>궁병 점사</li>
+<li>마법 예약</li>
+<li>좌우 기사단 이탈 명령</li>
+</ul>
+<p>실시간으로 20개 전부 조작하는 게 목적이 아니다.
+정확한 명령을 내리는 게 목적이다.</p>
+<h2 id="손가락용-치트시트">손가락용 치트시트<a class="heading-anchor" href="#손가락용-치트시트" aria-label="이 섹션 링크">#</a></h2>
+<table>
+<thead>
+<tr>
+  <th>하고 싶은 것</th>
+  <th>조작</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>그룹 지정</td>
+  <td><code>Ctrl + 숫자</code></td>
+</tr>
+<tr>
+  <td>잠금 그룹</td>
+  <td>자물쇠 잠금</td>
+</tr>
+<tr>
+  <td>진형 통째로 이동</td>
+  <td><code>Alt + 좌클릭 드래그</code></td>
+</tr>
+<tr>
+  <td>진형 회전</td>
+  <td>Alt 드래그 중 <code>Ctrl</code></td>
+</tr>
+<tr>
+  <td>돌격</td>
+  <td>적 유닛 우클릭</td>
+</tr>
+<tr>
+  <td>이탈</td>
+  <td>빈 땅 우클릭 반복</td>
+</tr>
+<tr>
+  <td>우회 경로</td>
+  <td><code>Shift</code> 경로 지정</td>
+</tr>
+<tr>
+  <td>랜스 진형</td>
+  <td>돌격 직전 ON, 이탈 시 OFF</td>
+</tr>
+<tr>
+  <td>부대 추적 카메라</td>
+  <td><code>Insert</code></td>
+</tr>
+<tr>
+  <td>UI 숨기기</td>
+  <td><code>K</code></td>
+</tr>
+<tr>
+  <td>머리 터질 것 같음</td>
+  <td>일시정지</td>
+</tr>
+</tbody>
+</table>
+<h2 id="한-줄-정리">한 줄 정리<a class="heading-anchor" href="#한-줄-정리" aria-label="이 섹션 링크">#</a></h2>
+<p><strong>브레토니아 수동전투는 농민에게 전선을 맡기고, 플레이어가 기사단 교통경찰이 되는 게임이다.</strong></p>
+</div>
+  <footer class="article-foot">이 페이지는 Markdown 소스에서 자동 생성되었습니다. 내용 수정은 <code>content/bretonnia/bretonnia_cavalry_controls.md</code>만 고치면 됩니다.</footer>
+</article>
+</main>
+</div>
+
+<div class="search-modal" data-search-modal hidden>
+  <div class="search-panel">
+    <div class="search-head">
+      <input data-search-input type="search" placeholder="루앙, 사이클 차지, 옥전사…" autocomplete="off">
+      <button data-search-close aria-label="검색 닫기">✕</button>
+    </div>
+    <div class="search-hint">제목·본문·소제목 전체 검색 · <kbd>Esc</kbd> 닫기</div>
+    <div class="search-results" data-search-results></div>
+  </div>
+</div>
+</body>
+</html>

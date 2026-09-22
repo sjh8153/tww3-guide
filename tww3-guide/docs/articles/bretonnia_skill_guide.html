@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0e0f12">
+  <title>브레토니아 스킬트리 전용 압축 메모 · TWW3 공략 위키</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <script defer src="../static/app.js"></script>
+</head>
+<body data-root="../">
+<header class="topbar">
+  <a class="brand" href="../index.html"><span class="brand-mark">III</span><span><b>TWW3</b><small>개인 공략 위키</small></span></a>
+  <button class="search-trigger" data-search-open aria-label="검색 열기">⌕ <span>검색</span><kbd>/</kbd></button>
+  <button class="mobile-nav" data-nav-toggle aria-label="메뉴 열기">☰</button>
+</header>
+<div class="shell">
+  <aside class="sidebar" data-sidebar>
+    <nav>
+      <a href="../index.html" class="nav-home">⌂ 전체 홈</a>
+      
+      <section class="nav-faction">
+        <a class="nav-faction-title" href="../cathay.html"><span class="sigil">龍</span>캐세이</a>
+        <div class="nav-links">
+          
+          <a href="../articles/cathay_skill_guide.html" >스킬트리</a>
+          
+          <a href="../articles/cathay_units_artillery.html" >포병·지원</a>
+          
+          <a href="../articles/cathay_units_cavalry.html" >기병</a>
+          
+          <a href="../articles/cathay_units_melee.html" >근접 보병</a>
+          
+          <a href="../articles/cathay_units_ranged.html" >원거리 보병</a>
+          
+        </div>
+      </section>
+      
+      <section class="nav-faction">
+        <a class="nav-faction-title" href="../bretonnia.html"><span class="sigil">⚜</span>브레토니아</a>
+        <div class="nav-links">
+          
+          <a href="../articles/bretonnia_campaign_guide.html" >캠페인 운영</a>
+          
+          <a href="../articles/bretonnia_cavalry_controls.html" >기병 전투 조작</a>
+          
+          <a href="../articles/bretonnia_early_game_economy_armies.html" >초반 경제·군단</a>
+          
+          <a href="../articles/bretonnia_lords_heroes.html" >군주·영웅</a>
+          
+          <a href="../articles/bretonnia_skill_guide.html" class="active">스킬트리</a>
+          
+        </div>
+      </section>
+      
+    </nav>
+    <div class="sidebar-foot">Markdown 기반 · 마지막 빌드 2026-09-22</div>
+  </aside>
+  <main class="main">
+<article class="article-wrap">
+  <header class="article-head">
+    <div class="crumb"><a href="../bretonnia.html">브레토니아</a><span>›</span>스킬트리</div>
+    <h1>브레토니아 스킬트리 전용 압축 메모</h1>
+    <p>루앙·플로렌스·생명 예언자 성장</p>
+    <div class="article-meta"><span>원본: <code>bretonnia_skill_guide.md</code></span><span>문서 업데이트: 2026-09-22</span><span>사이트 빌드: 2026-09-22</span></div>
+  </header>
+  
+  <details class="toc" open><summary>이 문서에서 찾기</summary><div>
+    <a class="toc-l2" href="#1-루앙-레옹쿠르">1. 루앙 레옹쿠르</a><a class="toc-l2" href="#2-플로렌스-두보아-천상학파-시녀">2. 플로렌스 두보아 — 천상학파 시녀</a><a class="toc-l2" href="#3-생명학파-예언자-추가-지원-군주">3. 생명학파 예언자 — 추가 지원 군주</a><a class="toc-l2" href="#4-보조-메모-일반-캐릭터의-스킬-방향">4. 보조 메모 — 일반 캐릭터의 스킬 방향</a><a class="toc-l3" href="#일반-브레토니아-군주">일반 브레토니아 군주</a><a class="toc-l3" href="#일반-예언자-공통-생명-천상-야수">일반 예언자 공통 — 생명·천상·야수</a><a class="toc-l3" href="#팔라딘">팔라딘</a><a class="toc-l3" href="#시녀-공통-생명-천상-야수">시녀 공통 — 생명·천상·야수</a><a class="toc-l2" href="#5-레벨업-때-10초-확인">5. 레벨업 때 10초 확인</a>
+  </div></details>
+  
+  <div class="markdown-body"><blockquote>
+<p><strong>대화 기준 운용 메모</strong> — 「브레토니아」 대화에서 추천한 성장 방향을 압축한 문서. 최신 패치 스킬트리 검증표나 레벨별 확정 빌드가 아니다. 정확한 스킬명·효과·선행 조건·해금 레벨·탈것 자동 획득 여부는 현재 게임 툴팁을 우선한다.</p>
+</blockquote>
+<ul>
+<li>기준 조합: <strong>루앙 본대 + 플로렌스(천상 시녀) + 빈/소수 병력 생명 예언자 지원군</strong>.</li>
+<li>화살표는 투자 우선순위다. 선행 포인트가 필요하면 먼저 충족하며, 표시 순서대로 매 레벨 즉시 찍을 수 있다는 뜻은 아니다.</li>
+<li>탈것은 해금 시 탑승을 확인한다. 아래 순서에 있다고 반드시 스킬포인트를 쓰는 항목이라는 뜻은 아니다.</li>
+<li>역할·모집 특성·조합 상세는 기존 <code>sources/bretonnia_lords_heroes.md</code> 참고. 여기서는 <strong>“그래서 다음 포인트 어디 찍음?”</strong>만 다룬다.</li>
+</ul>
+<h2 id="1-루앙-레옹쿠르">1. 루앙 레옹쿠르<a class="heading-anchor" href="#1-루앙-레옹쿠르" aria-label="이 섹션 링크">#</a></h2>
+<table>
+<thead>
+<tr>
+  <th>구간</th>
+  <th>투자 우선순위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>초반</td>
+  <td><strong>행군자 → 고무적인 존재 → 글로르피니알의 후예</strong>. 이동과 주력 지상기병 강화부터</td>
+</tr>
+<tr>
+  <td>중반</td>
+  <td><strong>왕의 군단 → 귀족 혈통 → 귀감 → 만인의 존경을 받는 자</strong>. 고유줄 해금에 맞춰 투자; 배퀴스는 해금 시 탑승 확인</td>
+</tr>
+<tr>
+  <td>후반</td>
+  <td>실제 기사 구성에 맞춰 <strong>영지의 수호자 / 기사도의 규범 → 본체 전투줄</strong>. 본체는 근접공격·방어 → 체력 → 무기피해 → 치명적인 맹습 방향</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>핵심 스킬:</strong> 글로르피니알의 후예(Glorfinial's Progeny), 왕의 군단, 귀족 혈통. 이후 귀감과 기사 구성에 맞는 빨간줄.</li>
+<li><strong>빨간줄 분기:</strong> 대화에서는 왕국기사·수행기사 중심이면 영지의 수호자(Protectors of the Realm), 성배·왕실 기사 중심이면 기사도의 규범(Chivalric Code)을 추천했다. 적용 병종과 부대 랭크 조건은 툴팁 확인.</li>
+<li><strong>후순위:</strong> 농민 강화, 명백한 메시지, 왕실 인장 등 내정·모집 편의. 단, 왕실 비행기병을 본격 모집할 때는 왕실 인장의 우선순위를 재검토. 사자의 방패 관련 강화는 본체 생존 보강 때 검토.</li>
+<li><strong>탈것:</strong> 대화에서 제시한 경로는 마갑 군마 → 왕실 페가서스 → <strong>배퀴스</strong>. 배퀴스는 위 투자 순서를 끝낼 때까지 기다리는 항목이 아니다.</li>
+<li><strong>서약/Troth:</strong> 대화에서는 루앙이 기사 서약을 모두 완료한 상태로 시작한다고 설명했다. 현재 캠페인 화면에서 확인하며, 이 상태를 새 일반 군주에게 그대로 대입하지 않는다.</li>
+<li><strong>대화 기준 운용 메모:</strong> 원래 제안은 행군자 1 → 고무적인 존재 1 → 글로르피니알의 후예 3포인트. 포인트 수와 고유 스킬의 충원·유지비·기사도 수치는 패치 의존이므로 확정값으로 사용하지 않는다. 쿠론의 검 같은 장비 능력과 기본 회복 능력은 투자 스킬과 구분한다.</li>
+<li><strong>한 줄 요약:</strong> <strong>기사단 밥값부터 올리고, 배퀴스 탄 다음 왕 본체를 존나 센 보스몹으로 만든다.</strong></li>
+</ul>
+<h2 id="2-플로렌스-두보아-천상학파-시녀">2. 플로렌스 두보아 — 천상학파 시녀<a class="heading-anchor" href="#2-플로렌스-두보아-천상학파-시녀" aria-label="이 섹션 링크">#</a></h2>
+<table>
+<thead>
+<tr>
+  <th>구간</th>
+  <th>투자 우선순위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>초반</td>
+  <td><strong>조화의 집결 → 자정 바람의 저주 집중</strong>. 바람 폭발은 보조로 최소 투자</td>
+</tr>
+<tr>
+  <td>중반</td>
+  <td><strong>회피 → 마법 효율·시전자 강화 → 카산도라의 혜성 → 비전 전도체</strong>. 선행 조건에 맞춰 개방</td>
+</tr>
+<tr>
+  <td>후반</td>
+  <td>핵심 주문 강화 마무리 → <strong>우라논의 벼락 → 연쇄 번개 → 필요한 캠페인·생존 보조</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>핵심 스킬:</strong> 조화의 집결(Harmonic Convergence), 자정 바람의 저주(Curse of the Midnight Wind), 카산도라의 혜성(Comet of Casandora), 비전 전도체(Arcane Conduit).</li>
+<li><strong>찍는 이유:</strong> 조화의 집결은 루앙·핵심 기사 지원, 자정 바람의 저주는 기사 교전·이탈 지원, 혜성은 적 밀집 구역 공격용이라는 대화의 역할 분담.</li>
+<li><strong>후순위:</strong> 연쇄 번개, 남는 공격 주문, 직접 근접전 강화, 군단 밖 영웅 행동 투자. 휘몰아치는 하늘(Roiling Skies)은 패시브의 존재와 포인트 투자 여부를 구분하고, 이것만 보고 핵심 주문을 늦추지 않는다.</li>
+<li><strong>탈것:</strong> 대화에서는 <strong>유니콘</strong>을 최종 기동 수단으로 추천했다. 해금하면 탑승 확인. 목적은 마법 위치 선정·기병 추종·탈출이다.</li>
+<li><strong>서약/Troth:</strong> 플로렌스 개인의 Troth 단계와 보상은 대화에서 구체적으로 확정하지 않았다. 현재 시녀 화면에 해당 시스템이 있으면 조건 선택·진행을 확인한다. 영웅의 맹세가 군단장의 기사 유지비 조건을 대신한다고 해석하지 않는다.</li>
+<li><strong>대화 기준 운용 메모:</strong> 바람 폭발 ‘1포인트 정도’는 당시 보조 투자 제안. 주문 비용·능력치 증감·지속시간은 재수록하지 않았다. ‘마법 저장량’이라는 당시 표현도 현재 스킬 효과를 확인해서 적용한다.</li>
+<li><strong>한 줄 요약:</strong> <strong>루앙 버프 → 적 디버프 → 뭉치면 혜성. 마법사를 칼싸움에 넣으면 씨발 인사사고다.</strong></li>
+</ul>
+<h2 id="3-생명학파-예언자-추가-지원-군주">3. 생명학파 예언자 — 추가 지원 군주<a class="heading-anchor" href="#3-생명학파-예언자-추가-지원-군주" aria-label="이 섹션 링크">#</a></h2>
+<table>
+<thead>
+<tr>
+  <th>구간</th>
+  <th>투자 우선순위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>초반</td>
+  <td><strong>대지의 피 → 재생 개방·강화</strong>. 접근 가능한 회복 주문과 선행 조건부터</td>
+</tr>
+<tr>
+  <td>중반</td>
+  <td><strong>회피 → 비전 전도체 등 마법 효율 → 회복 주문 강화 마무리</strong>. 왕실 페가서스 해금 시 탑승 확인</td>
+</tr>
+<tr>
+  <td>후반</td>
+  <td><strong>돌가죽·가시 방패 → 지하 거주자</strong>. 독립 군단장이 되면 자기 기사 구성에 맞는 빨간줄을 앞당김</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>핵심 스킬:</strong> 대지의 피(Earth Blood), 재생(Regrowth), 비전 전도체. 기본 원칙은 <strong>회복 &gt; 마법 효율 &gt; 버프·공격마법</strong>.</li>
+<li><strong>회복 분담:</strong> 대지의 피는 모인 아군의 회복, 재생은 루앙·팔라딘·비싼 기사 등 중요한 대상의 회복에 쓰는 방향. ‘살린다’는 표현은 생존 지원의 뜻이며, 죽은 개체를 부활시킨다는 뜻으로 읽지 않는다.</li>
+<li><strong>후순위:</strong> 직접 근접전 강화, 숲의 각성 등 남는 공격 주문. 플로렌스가 천상 공격마법을 맡는 현재 조합에서는 지하 거주자(The Dwellers Below)도 회복보다 뒤.</li>
+<li><strong>빨간줄 분기:</strong> 빈/소수 병력 지원군이면 투자 효율이 낮아 미룬다. <strong>자기 군단에 기사를 받아 독립하는 시점</strong>에 실제 병종에 맞춰 투자한다. 지원군의 군단 강화가 루앙 본대에도 적용된다고 가정하지 않는다.</li>
+<li><strong>탈것:</strong> 대화에서 제시한 경로는 마갑 군마 → <strong>왕실 페가서스</strong>. 회복 배달과 탈출용으로 운용.</li>
+<li><strong>서약/Troth:</strong> 모집 직후 <strong>Troth 조건 선택</strong>부터 확인. 선택한 조건의 완료 및 다음 단계 선택을 챙긴다. 독립시키거나 고급 기사를 넘기기 전 해당 군주에게 적용되는 유지비 조건을 확인한다.</li>
+<li><strong>대화 기준 운용 메모:</strong> 재생·회피·비전 전도체의 실제 접근 순서는 선행 조건에 따라 달라질 수 있다. ‘기사 몇 카드부터 독립’ 같은 고정 숫자는 기준으로 삼지 않고 군단 구성·경제·Troth 상태로 판단한다.</li>
+<li><strong>한 줄 요약:</strong> <strong>루앙이 적을 패면 얘는 루앙을 고친다. 왕의 사용시간을 존나 늘리는 출장 병원.</strong></li>
+</ul>
+<h2 id="4-보조-메모-일반-캐릭터의-스킬-방향">4. 보조 메모 — 일반 캐릭터의 스킬 방향<a class="heading-anchor" href="#4-보조-메모-일반-캐릭터의-스킬-방향" aria-label="이 섹션 링크">#</a></h2>
+<blockquote>
+<p><strong>대화 기준 운용 메모:</strong> 아래는 대화에서 정한 역할을 성장 단계로 압축한 보조 정리다. 일반 군주·팔라딘·야수 마법사의 개별 스킬명과 레벨별 클릭 순서는 당시 확정하지 않았다.</p>
+</blockquote>
+<h3 id="일반-브레토니아-군주">일반 브레토니아 군주<a class="heading-anchor" href="#일반-브레토니아-군주" aria-label="이 섹션 링크">#</a></h3>
+<ul>
+<li><strong>초반 → 중반 → 후반:</strong> 빈 지원 군주면 본체 전투·생존 → 탈것과 전투력 강화 → 독립할 때 자기 기사 빨간줄. 처음부터 병력을 지휘하면 이동·주력 병종 강화를 함께 고려.</li>
+<li><strong>핵심:</strong> 적을 붙잡고 직접 싸울 본체 전투·생존 방향; 기사군단장이 되면 실제 병종 강화.</li>
+<li><strong>후순위:</strong> 병력이 없는 동안 군단 빨간줄, 쓰지 않는 병종 강화. 루앙 고유 스킬을 일반 군주에게 복사하지 않는다.</li>
+<li><strong>탈것:</strong> 대화상 군마 → 페가서스 → 히포그리프 방향. 현재 해금 조건 확인.</li>
+<li><strong>서약/Troth:</strong> 기사 서약 선택 → 조건 수행 → 다음 단계 확인. 고급 기사 인수 전 군단장 서약 검사.</li>
+<li><strong>한 줄 요약:</strong> <strong>빈손일 땐 본인이 병력이고, 기사 받으면 군단장 빌드로 전환한다.</strong></li>
+</ul>
+<h3 id="일반-예언자-공통-생명-천상-야수">일반 예언자 공통 — 생명·천상·야수<a class="heading-anchor" href="#일반-예언자-공통-생명-천상-야수" aria-label="이 섹션 링크">#</a></h3>
+<ul>
+<li><strong>초반 → 중반 → 후반:</strong> 학파의 주력 주문 → 시전자 효율·기동성 → 보조 주문 및 독립 군단의 기사 강화.</li>
+<li><strong>핵심:</strong> 생명은 회복, 천상은 버프·디버프·광역 공격, 야수는 버프·소환·지원이라는 대화의 분담. 생명은 3절, 천상은 2절의 주문 우선순위를 참고하되 군주·영웅 트리 차이는 확인.</li>
+<li><strong>후순위:</strong> 직접 근접전, 빈 군단의 빨간줄, 다른 마법사가 이미 충분히 담당하는 역할에 대한 중복 투자.</li>
+<li><strong>탈것:</strong> 대화상 마갑 군마·왕실 페가서스 계열. 학파별 현재 목록 확인.</li>
+<li><strong>서약/Troth:</strong> Troth 조건을 먼저 선택하고 단계별 진행을 확인. 야수의 구체적 주문 순서는 대화에서 미확정.</li>
+<li><strong>한 줄 요약:</strong> <strong>마법은 예언자가, 앞에서 처맞는 일은 팔라딘이 맡는다.</strong></li>
+</ul>
+<h3 id="팔라딘">팔라딘<a class="heading-anchor" href="#팔라딘" aria-label="이 섹션 링크">#</a></h3>
+<ul>
+<li><strong>초반 → 중반 → 후반:</strong> 전선에서 버틸 생존·근접전 방향 → 기동성과 핵심 표적 교전 능력 → 남은 본체 강화·필요한 보조 능력.</li>
+<li><strong>핵심:</strong> 적 군주·괴수 견제, 적을 붙잡아 기사 돌격각 만들기. 정확한 개별 스킬 우선순위는 대화에서 미확정.</li>
+<li><strong>후순위:</strong> 군단 내 전투 역할과 무관한 영웅 행동 투자. 군주용 빨간줄 빌드를 그대로 적용하지 않는다.</li>
+<li><strong>탈것:</strong> 대화에서는 페가서스 활용을 언급. 실제 탈것 이름·해금 조건은 화면 확인.</li>
+<li><strong>서약/Troth:</strong> 기사 서약을 진행해 본체 보너스를 확보하는 방향. 대화에서 언급한 ‘완벽한 활력’ 등 최종 보상은 현재 툴팁 확인. 팔라딘의 서약을 군단장의 유지비 서약 대체재로 보지 않는다.</li>
+<li><strong>한 줄 요약:</strong> <strong>살아있는 말뚝. 얘가 버티는 동안 기사가 뒤통수를 박는다.</strong></li>
+</ul>
+<h3 id="시녀-공통-생명-천상-야수">시녀 공통 — 생명·천상·야수<a class="heading-anchor" href="#시녀-공통-생명-천상-야수" aria-label="이 섹션 링크">#</a></h3>
+<ul>
+<li><strong>초반 → 중반 → 후반:</strong> 학파 핵심 주문 → 마법 효율·기동성 → 보조 주문·생존·필요한 캠페인 지원.</li>
+<li><strong>핵심:</strong> 생명은 회복 우선, 천상은 플로렌스 순서 참고, 야수는 기병·캐릭터 지원 방향. 생명 예언자의 주문 원칙은 참고하되 군주 전용 스킬까지 복사하지 않는다.</li>
+<li><strong>후순위:</strong> 직접 근접전, 현재 쓰지 않는 주문, 군단 배속 운용 중 외부 영웅 행동 투자. 야수의 세부 클릭 순서는 미확정.</li>
+<li><strong>탈것:</strong> 천상 플로렌스는 대화상 유니콘. 다른 학파의 최종 탈것은 일괄 단정하지 않고 목록 확인.</li>
+<li><strong>서약/Troth:</strong> 대화에서 시녀의 상세 조건·보상은 미확정. 현재 화면의 Troth 적용 여부와 진행 조건을 확인하며, 군단장의 유지비 조건과 구분.</li>
+<li><strong>한 줄 요약:</strong> <strong>일반 군주가 싸우는 동안 마법 지원. 몸으로 해결하려 들지 말자.</strong></li>
+</ul>
+<h2 id="5-레벨업-때-10초-확인">5. 레벨업 때 10초 확인<a class="heading-anchor" href="#5-레벨업-때-10초-확인" aria-label="이 섹션 링크">#</a></h2>
+<ol>
+<li><strong>빈 지원 군주인가, 병력을 가진 군단장인가?</strong> 빨간줄 우선순위를 가른다.</li>
+<li><strong>핵심 주문·고유 스킬 선행 조건이 열렸나?</strong> 이름만 보고 잠긴 곳까지 직행하려 하지 않는다.</li>
+<li><strong>탈것이 해금됐나?</strong> 탑승 상태를 확인한다.</li>
+<li><strong>서약/Troth를 선택했고 실제로 진행 중인가?</strong> ‘따라다니면 알아서 되겠지’ 하다 허송세월하지 않는다.</li>
+<li><strong>강화 대상이 자기 군단·자기 캐릭터에 맞나?</strong> 고급 빨간줄의 적용 병종·랭크 조건까지 확인.</li>
+</ol>
+<hr />
+<p>출처: <a href="chatgpt-conversation://6aa5768a-4cec-83e8-bd26-816f0fe1ad48">브레토니아 원본 대화</a>, 기존 <code>sources/bretonnia_lords_heroes.md</code>. 작성일: 2026-09-15. 원본 대화의 웹 인용·수치는 이번 문서에서 재검증하지 않았으며, 새 수치나 패치 최적해를 추가하지 않았다.</p>
+</div>
+  <footer class="article-foot">이 페이지는 Markdown 소스에서 자동 생성되었습니다. 내용 수정은 <code>content/bretonnia/bretonnia_skill_guide.md</code>만 고치면 됩니다.</footer>
+</article>
+</main>
+</div>
+
+<div class="search-modal" data-search-modal hidden>
+  <div class="search-panel">
+    <div class="search-head">
+      <input data-search-input type="search" placeholder="루앙, 사이클 차지, 옥전사…" autocomplete="off">
+      <button data-search-close aria-label="검색 닫기">✕</button>
+    </div>
+    <div class="search-hint">제목·본문·소제목 전체 검색 · <kbd>Esc</kbd> 닫기</div>
+    <div class="search-results" data-search-results></div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}TWW3 개인 공략 위키{% endblock %}
+{% block content %}
+<section class="hero">
+  <p class="eyebrow">TOTAL WAR: WARHAMMER III</p>
+  <h1>설명회에서 나온 걸<br><em>바로 찾아보는 공략 위키.</em></h1>
+  <p>채팅에서 정리한 Markdown을 그대로 소스로 쓰고, 빌드하면 홈페이지가 갱신됩니다. 이제 소스 파일 뒤질 필요 없음 ㅋㅋ.</p>
+  <button class="hero-search" data-search-open>⌕ 공략 전체 검색</button>
+</section>
+<section class="faction-grid">
+{% for key, faction in factions.items() %}
+  {% set cnt = articles|selectattr('faction','equalto',key)|list|length %}
+  <a class="faction-card faction-{{ key }}" href="{{ key }}.html">
+    <span class="faction-icon">{{ faction.icon }}</span>
+    <div><small>{{ cnt }}개 문서</small><h2>{{ faction.name }}</h2><p>{{ faction.tagline }}</p></div>
+    <span class="arrow">↗</span>
+  </a>
+{% endfor %}
+</section>
+<section class="quick-section">
+  <div class="section-title"><div><span>QUICK ACCESS</span><h2>바로 찾기</h2></div></div>
+  <div class="quick-grid">
+  {% for a in articles|sort(attribute='order') %}
+    <a class="quick-card" href="{{ a.url }}"><span>{{ factions[a.faction].icon }}</span><div><b>{{ a.label }}</b><small>{{ a.faction_short }} · {{ a.description }}</small></div></a>
+  {% endfor %}
+  </div>
+</section>
+{% endblock %}

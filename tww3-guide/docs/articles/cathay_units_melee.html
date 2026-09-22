@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0e0f12">
+  <title>캐세이 근접 보병 가이드 · TWW3 공략 위키</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <script defer src="../static/app.js"></script>
+</head>
+<body data-root="../">
+<header class="topbar">
+  <a class="brand" href="../index.html"><span class="brand-mark">III</span><span><b>TWW3</b><small>개인 공략 위키</small></span></a>
+  <button class="search-trigger" data-search-open aria-label="검색 열기">⌕ <span>검색</span><kbd>/</kbd></button>
+  <button class="mobile-nav" data-nav-toggle aria-label="메뉴 열기">☰</button>
+</header>
+<div class="shell">
+  <aside class="sidebar" data-sidebar>
+    <nav>
+      <a href="../index.html" class="nav-home">⌂ 전체 홈</a>
+      
+      <section class="nav-faction">
+        <a class="nav-faction-title" href="../cathay.html"><span class="sigil">龍</span>캐세이</a>
+        <div class="nav-links">
+          
+          <a href="../articles/cathay_skill_guide.html" >스킬트리</a>
+          
+          <a href="../articles/cathay_units_artillery.html" >포병·지원</a>
+          
+          <a href="../articles/cathay_units_cavalry.html" >기병</a>
+          
+          <a href="../articles/cathay_units_melee.html" class="active">근접 보병</a>
+          
+          <a href="../articles/cathay_units_ranged.html" >원거리 보병</a>
+          
+        </div>
+      </section>
+      
+      <section class="nav-faction">
+        <a class="nav-faction-title" href="../bretonnia.html"><span class="sigil">⚜</span>브레토니아</a>
+        <div class="nav-links">
+          
+          <a href="../articles/bretonnia_campaign_guide.html" >캠페인 운영</a>
+          
+          <a href="../articles/bretonnia_cavalry_controls.html" >기병 전투 조작</a>
+          
+          <a href="../articles/bretonnia_early_game_economy_armies.html" >초반 경제·군단</a>
+          
+          <a href="../articles/bretonnia_lords_heroes.html" >군주·영웅</a>
+          
+          <a href="../articles/bretonnia_skill_guide.html" >스킬트리</a>
+          
+        </div>
+      </section>
+      
+    </nav>
+    <div class="sidebar-foot">Markdown 기반 · 마지막 빌드 2026-09-22</div>
+  </aside>
+  <main class="main">
+<article class="article-wrap">
+  <header class="article-head">
+    <div class="crumb"><a href="../cathay.html">캐세이</a><span>›</span>근접 보병</div>
+    <h1>캐세이 근접 보병 가이드</h1>
+    <p>전열·방진·대형 대응</p>
+    <div class="article-meta"><span>원본: <code>cathay_units_melee.md</code></span><span>문서 업데이트: 2026-09-22</span><span>사이트 빌드: 2026-09-22</span></div>
+  </header>
+  
+  <details class="toc" open><summary>이 문서에서 찾기</summary><div>
+    <a class="toc-l2" href="#농민-장창병">농민 장창병</a><a class="toc-l3" href="#역할">역할</a><a class="toc-l3" href="#잘-잡는-상대">잘 잡는 상대</a><a class="toc-l3" href="#약한-상대">약한 상대</a><a class="toc-l3" href="#배치-위치">배치 위치</a><a class="toc-l3" href="#추천-카드-수">추천 카드 수</a><a class="toc-l3" href="#언제-교체-또는-사용">언제 교체 또는 사용</a><a class="toc-l3" href="#캐세이-고유-느낌">캐세이 고유 느낌</a><a class="toc-l3" href="#한-줄-평가">한 줄 평가</a><a class="toc-l2" href="#옥전사">옥전사</a><a class="toc-l3" href="#역할-2">역할</a><a class="toc-l3" href="#잘-잡는-상대-2">잘 잡는 상대</a><a class="toc-l3" href="#약한-상대-2">약한 상대</a><a class="toc-l3" href="#배치-위치-2">배치 위치</a><a class="toc-l3" href="#추천-카드-수-2">추천 카드 수</a><a class="toc-l3" href="#언제-교체-또는-사용-2">언제 교체 또는 사용</a><a class="toc-l3" href="#캐세이-고유-느낌-2">캐세이 고유 느낌</a><a class="toc-l3" href="#한-줄-평가-2">한 줄 평가</a><a class="toc-l2" href="#옥전사-할버드">옥전사 할버드</a><a class="toc-l3" href="#역할-3">역할</a><a class="toc-l3" href="#잘-잡는-상대-3">잘 잡는 상대</a><a class="toc-l3" href="#약한-상대-3">약한 상대</a><a class="toc-l3" href="#배치-위치-3">배치 위치</a><a class="toc-l3" href="#추천-카드-수-3">추천 카드 수</a><a class="toc-l3" href="#언제-교체-또는-사용-3">언제 교체 또는 사용</a><a class="toc-l3" href="#캐세이-고유-느낌-3">캐세이 고유 느낌</a><a class="toc-l3" href="#한-줄-평가-3">한 줄 평가</a><a class="toc-l2" href="#천룡근위대">천룡근위대</a><a class="toc-l3" href="#역할-4">역할</a><a class="toc-l3" href="#잘-잡는-상대-4">잘 잡는 상대</a><a class="toc-l3" href="#약한-상대-4">약한 상대</a><a class="toc-l3" href="#배치-위치-4">배치 위치</a><a class="toc-l3" href="#추천-카드-수-4">추천 카드 수</a><a class="toc-l3" href="#언제-교체-또는-사용-4">언제 교체 또는 사용</a><a class="toc-l3" href="#캐세이-고유-느낌-4">캐세이 고유 느낌</a><a class="toc-l3" href="#한-줄-평가-4">한 줄 평가</a><a class="toc-l2" href="#호랑이-전사">호랑이 전사</a><a class="toc-l3" href="#역할-5">역할</a><a class="toc-l3" href="#잘-잡는-상대-5">잘 잡는 상대</a><a class="toc-l3" href="#약한-상대-5">약한 상대</a><a class="toc-l3" href="#배치-위치-5">배치 위치</a><a class="toc-l3" href="#추천-카드-수-5">추천 카드 수</a><a class="toc-l3" href="#언제-교체-또는-사용-5">언제 교체 또는 사용</a><a class="toc-l3" href="#캐세이-고유-느낌-5">캐세이 고유 느낌</a><a class="toc-l3" href="#한-줄-평가-5">한 줄 평가</a><a class="toc-l2" href="#호랑이-전사-추적자">호랑이 전사 추적자</a><a class="toc-l3" href="#역할-6">역할</a><a class="toc-l3" href="#잘-잡는-상대-6">잘 잡는 상대</a><a class="toc-l3" href="#약한-상대-6">약한 상대</a><a class="toc-l3" href="#배치-위치-6">배치 위치</a><a class="toc-l3" href="#추천-카드-수-6">추천 카드 수</a><a class="toc-l3" href="#언제-교체-또는-사용-6">언제 교체 또는 사용</a><a class="toc-l3" href="#캐세이-고유-느낌-6">캐세이 고유 느낌</a><a class="toc-l3" href="#한-줄-평가-6">한 줄 평가</a><a class="toc-l2" href="#철호조-호랑이-전사">철호조 호랑이 전사</a><a class="toc-l3" href="#역할-7">역할</a><a class="toc-l3" href="#잘-잡는-상대-7">잘 잡는 상대</a><a class="toc-l3" href="#약한-상대-7">약한 상대</a><a class="toc-l3" href="#배치-위치-7">배치 위치</a><a class="toc-l3" href="#추천-카드-수-7">추천 카드 수</a><a class="toc-l3" href="#언제-교체-또는-사용-7">언제 교체 또는 사용</a><a class="toc-l3" href="#캐세이-고유-느낌-7">캐세이 고유 느낌</a><a class="toc-l3" href="#한-줄-평가-7">한 줄 평가</a><a class="toc-l2" href="#근접-보병-전체-요약표">근접 보병 전체 요약표</a><a class="toc-l2" href="#핵심-철학-기다리는-방진-찾아가는-호랑이">핵심 철학: 기다리는 방진, 찾아가는 호랑이</a>
+  </div></details>
+  
+  <div class="markdown-body"><p>원본: 대화 「케세이」의 근접 보병 설명회(기본 4종 + 호랑이 전사 3종).
+정리일: 2026-09-07. 앞선 대화의 운용 설명과 톤을 압축한 메모이며, 최신 패치 재검증 자료는 아니다. 세부 스탯 나열은 생략하고 역할과 운용 중심으로 정리했다.</p>
+<p>추천 카드 수는 각 유닛을 채용할 때의 기준이다. 전부 합쳐서 한 군단에 넣으라는 뜻은 아님 ㅋㅋ. 상대 구성과 재정에 맞춰 고르고, 사격·포병 자리도 확보한다.</p>
+<h2 id="농민-장창병">농민 장창병<a class="heading-anchor" href="#농민-장창병" aria-label="이 섹션 링크">#</a></h2>
+<h3 id="역할">역할<a class="heading-anchor" href="#역할" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>대형 유닛의 돌격을 받아내는 싸구려 방벽.</strong> 대형 보너스, 돌격 반사와 전문 돌격 방어를 활용한다. 직접 쫓아가기보다 정지해서 돌격을 받아내는 게 핵심이다.</p>
+<h3 id="잘-잡는-상대">잘 잡는 상대<a class="heading-anchor" href="#잘-잡는-상대" aria-label="이 섹션 링크">#</a></h3>
+<p>정면으로 들이박는 기병과 대형 적. 특히 돌격을 받을 준비가 된 상태에서 가격 대비 효율이 좋다. 뒤의 사격병이 함께 처리하도록 붙잡는다.</p>
+<h3 id="약한-상대">약한 상대<a class="heading-anchor" href="#약한-상대" aria-label="이 섹션 링크">#</a></h3>
+<p>제대로 된 근접보병, 정예보병, 집중사격. 낮은 장갑과 저티어 전투력으로 보병 맞다이를 시키면 농민만 억울함.</p>
+<h3 id="배치-위치">배치 위치<a class="heading-anchor" href="#배치-위치" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>전열 양쪽 측면.</strong> 중앙은 옥전사에게 맡기고, 돌아오는 기병을 창 세워 받아준다.</p>
+<h3 id="추천-카드-수">추천 카드 수<a class="heading-anchor" href="#추천-카드-수" aria-label="이 섹션 링크">#</a></h3>
+<p>초반 <strong>2~4카드</strong>, 옥전사가 충분해지면 <strong>0~2카드</strong>. 후반에는 거의 퇴역.</p>
+<h3 id="언제-교체-또는-사용">언제 교체 또는 사용<a class="heading-anchor" href="#언제-교체-또는-사용" aria-label="이 섹션 링크">#</a></h3>
+<p>초반의 저렴한 측면 방어용. <strong>옥전사 할버드가 충분히 나오면 교체</strong>한다.</p>
+<h3 id="캐세이-고유-느낌">캐세이 고유 느낌<a class="heading-anchor" href="#캐세이-고유-느낌" aria-label="이 섹션 링크">#</a></h3>
+<p>저티어부터 진형 유지·돌격 방어·음양 조화를 챙긴다. 양 유닛이라 음 계열 사격병 근처에서 조화를 받는다.</p>
+<blockquote>
+<p>천룡황제: “니가 싸움 못하는 건 아는데 줄은 맞춰.”</p>
+</blockquote>
+<h3 id="한-줄-평가">한 줄 평가<a class="heading-anchor" href="#한-줄-평가" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>싸구려 대기병 바리케이드. 옥전사 할버드 나오기 전까지 측면 경비원.</strong></p>
+<h2 id="옥전사">옥전사<a class="heading-anchor" href="#옥전사" aria-label="이 섹션 링크">#</a></h2>
+<h3 id="역할-2">역할<a class="heading-anchor" href="#역할-2" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>캐세이 국민 방벽. 적을 오래 묶어 뒤의 사격병과 포병이 쏠 시간을 번다.</strong> 킬 수보다 전열 유지가 본업이며 장갑·방패·방어 태세·조화가 버티기를 뒷받침한다.</p>
+<h3 id="잘-잡는-상대-2">잘 잡는 상대<a class="heading-anchor" href="#잘-잡는-상대-2" aria-label="이 섹션 링크">#</a></h3>
+<p>저~중급 보병을 무난히 상대한다. 특정 적을 빠르게 죽이기보다 범용으로 버티는 쪽이 강점. 방패 덕분에 정면 사격도 어느 정도 견딘다.</p>
+<h3 id="약한-상대-2">약한 상대<a class="heading-anchor" href="#약한-상대-2" aria-label="이 섹션 링크">#</a></h3>
+<p>장갑관통 전문 보병과 정예 공격보병. 고티어 딜러와 오래 맞다이시키면 밀린다.</p>
+<blockquote>
+<p>옥전사: “저는 2티어 보병인데요.”
+플레이어: “쟤는 5티어인데 이겨봐.”
+옥전사: “미친놈인가.”</p>
+</blockquote>
+<h3 id="배치-위치-2">배치 위치<a class="heading-anchor" href="#배치-위치-2" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>전열 중앙.</strong> 뒤에 사격진과 포병을 두고, 대열을 유지하며 적의 접근을 받는다. 괜히 추격·돌격해서 방진을 찢지 않는다.</p>
+<h3 id="추천-카드-수-2">추천 카드 수<a class="heading-anchor" href="#추천-카드-수-2" aria-label="이 섹션 링크">#</a></h3>
+<p>초중반 <strong>4~6카드</strong>. 후반에도 2·3군단의 가성비 전열로 유용하다.</p>
+<h3 id="언제-교체-또는-사용-2">언제 교체 또는 사용<a class="heading-anchor" href="#언제-교체-또는-사용-2" aria-label="이 섹션 링크">#</a></h3>
+<p>묘영 주력군은 재정이 갖춰지고 전열이 뚫리기 시작하면 <strong>천룡근위대로 조금씩 교체</strong>한다. 고랭크 옥전사를 일괄 해고할 필요는 없고, 2·3군단에 넘겨도 된다. 앞선 대화의 도연을 보유한 묘영군에서는 오래 활용하는 방향이었다.</p>
+<h3 id="캐세이-고유-느낌-2">캐세이 고유 느낌<a class="heading-anchor" href="#캐세이-고유-느낌-2" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>대열 유지 + 음양 조화 + 후방 화력 보호.</strong> 이놈이 캐세이 그 자체다. 혼자 날뛰기보다 군대 전체가 맞물릴 때 제 역할을 한다.</p>
+<h3 id="한-줄-평가-2">한 줄 평가<a class="heading-anchor" href="#한-줄-평가-2" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>캐세이의 인간 성벽. 딜 기대하지 말고 안 뒤지는 것에 감사하십시오.</strong></p>
+<h2 id="옥전사-할버드">옥전사 할버드<a class="heading-anchor" href="#옥전사-할버드" aria-label="이 섹션 링크">#</a></h2>
+<h3 id="역할-3">역할<a class="heading-anchor" href="#역할-3" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>전열에 들어오는 기병·괴수 차단.</strong> 일반 옥전사에서 방패를 버리고 대형 대응을 강화한 버전. 대형 보너스·대형 돌격 방어·돌격 반사·방어 태세를 활용한다.</p>
+<h3 id="잘-잡는-상대-3">잘 잡는 상대<a class="heading-anchor" href="#잘-잡는-상대-3" aria-label="이 섹션 링크">#</a></h3>
+<p>기병, 대형 괴수, 괴수 보병, 괴수 기병 등 큰 놈들. 일반 옥전사가 “뭐든 버텨”라면 얘는 <strong>“큰 놈은 나한테 보내.”</strong></p>
+<h3 id="약한-상대-3">약한 상대<a class="heading-anchor" href="#약한-상대-3" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>집중사격. 방패가 없다.</strong> 저렴한 보병 떼를 처리하는 용도로도 일반 검방 옥전사보다 딱히 효율적이지 않다.</p>
+<h3 id="배치-위치-3">배치 위치<a class="heading-anchor" href="#배치-위치-3" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>전열 양 끝을 우선</strong>, 필요하면 중앙에도 섞는다. 기병과 괴수가 접근하는 길목에 세운다.</p>
+<h3 id="추천-카드-수-3">추천 카드 수<a class="heading-anchor" href="#추천-카드-수-3" aria-label="이 섹션 링크">#</a></h3>
+<p>보통 <strong>2~3카드</strong>. 기병·괴수가 많으면 <strong>4카드 이상</strong>도 가능. 보병 위주 적이면 일반 옥전사 비중을 높인다.</p>
+<h3 id="언제-교체-또는-사용-3">언제 교체 또는 사용<a class="heading-anchor" href="#언제-교체-또는-사용-3" aria-label="이 섹션 링크">#</a></h3>
+<p>농민 장창병의 역할을 더 안정적으로 수행할 때 채용. 후반 주력군에서는 <strong>천룡근위대가 고급 대체재</strong>이며, 2·3군단에서는 가성비 때문에 오래 쓴다.</p>
+<h3 id="캐세이-고유-느낌-3">캐세이 고유 느낌<a class="heading-anchor" href="#캐세이-고유-느낌-3" aria-label="이 섹션 링크">#</a></h3>
+<p>진형 속에 박아놓고 괴수가 와서 죽게 만드는 창병. <strong>“야 괴수 온다” 했더니 긴 거 들고 나온 경비원</strong>이다.</p>
+<h3 id="한-줄-평가-3">한 줄 평가<a class="heading-anchor" href="#한-줄-평가-3" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>대형 상대 전문 경비원. 방패 없으니 총알비 맞게 하지 마셈.</strong></p>
+<h2 id="천룡근위대">천룡근위대<a class="heading-anchor" href="#천룡근위대" aria-label="이 섹션 링크">#</a></h2>
+<h3 id="역할-4">역할<a class="heading-anchor" href="#역할-4" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>고티어 적을 상대하면서 전열까지 유지하는 정규 근접보병의 완성형.</strong> 장갑관통·대형 보너스·전문 돌격 방어로 버티기와 대형 처리를 함께 수행한다.</p>
+<blockquote>
+<p>옥전사: “안 죽는 게 제 일입니다.”
+천룡근위대: “안 죽는데 저 새끼도 죽입니다.”</p>
+</blockquote>
+<h3 id="잘-잡는-상대-4">잘 잡는 상대<a class="heading-anchor" href="#잘-잡는-상대-4" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>중장갑 대형 유닛</strong>, 기병과 괴수. 장갑관통과 대형 보너스가 함께 먹힌다. 기본 근접 능력도 높아 일반 보병에게 쉽게 무너지지 않는다.</p>
+<h3 id="약한-상대-4">약한 상대<a class="heading-anchor" href="#약한-상대-4" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>고급 사격병의 장갑관통 집중사격.</strong> 방패가 없고 비싸며, 옥전사보다 부대 인원도 적어 아무 데나 던지는 고기방패로 쓰기엔 손해다.</p>
+<h3 id="배치-위치-4">배치 위치<a class="heading-anchor" href="#배치-위치-4" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>적 정예가 들어오는 중앙 핵심 전열.</strong> 중심부는 천룡근위대, 외곽은 옥전사로 구성해도 된다.</p>
+<h3 id="추천-카드-수-4">추천 카드 수<a class="heading-anchor" href="#추천-카드-수-4" aria-label="이 섹션 링크">#</a></h3>
+<p>주력군 기준 <strong>2~4카드</strong>. 재정과 상대 수준에 따라 늘리되 사격 슬롯을 확보한다.</p>
+<h3 id="언제-교체-또는-사용-4">언제 교체 또는 사용<a class="heading-anchor" href="#언제-교체-또는-사용-4" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>고랭크 옥전사가 적 정예에게 뚫리기 시작하면 1~2카드부터 추가.</strong> 전열을 한 번에 전부 교체할 필요는 없다.</p>
+<h3 id="캐세이-고유-느낌-4">캐세이 고유 느낌<a class="heading-anchor" href="#캐세이-고유-느낌-4" aria-label="이 섹션 링크">#</a></h3>
+<p>최정예가 돼도 <strong>“네. 저희도 서 있겠습니다.”</strong> 존나 비싸고 존나 강한 방진의 핵심이다. 고티어까지 캐세이의 전열 유지 철학이 이어진다.</p>
+<h3 id="한-줄-평가-4">한 줄 평가<a class="heading-anchor" href="#한-줄-평가-4" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>옥전사 최종진화. 버티기만 하는 게 아니라 중장갑 괴수까지 찔러 죽이는 황제 친위대.</strong></p>
+<h2 id="호랑이-전사">호랑이 전사<a class="heading-anchor" href="#호랑이-전사" aria-label="이 섹션 링크">#</a></h2>
+<h3 id="역할-5">역할<a class="heading-anchor" href="#역할-5" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>공격형 대보병 쇼크 보병.</strong> 쌍도끼로 적 보병을 빠르게 처리하고, 옥전사가 붙잡은 적의 측후방을 친다.</p>
+<h3 id="잘-잡는-상대-5">잘 잡는 상대<a class="heading-anchor" href="#잘-잡는-상대-5" aria-label="이 섹션 링크">#</a></h3>
+<p>경장갑~중간급 보병, 사격보병, 측후방이 노출된 보병. 대보병 보너스와 높은 기본 피해를 살려 잡졸을 정리한다.</p>
+<h3 id="약한-상대-5">약한 상대<a class="heading-anchor" href="#약한-상대-5" aria-label="이 섹션 링크">#</a></h3>
+<p>중장갑 정예보병, 괴수·기병 같은 대형, 집중사격과 장기 소모전. <strong>“저 5분 버틸게요” 하는 놈이 아니다.</strong></p>
+<h3 id="배치-위치-5">배치 위치<a class="heading-anchor" href="#배치-위치-5" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>측면 또는 2선.</strong> 아군 전열이 붙은 다음 옆으로 들어가서 패준다. 중앙 방벽까지 전부 호랑이로 채우면 안정성이 떨어진다.</p>
+<h3 id="추천-카드-수-5">추천 카드 수<a class="heading-anchor" href="#추천-카드-수-5" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>2~4카드.</strong> 전열을 지원하는 공격 병력으로 섞는다.</p>
+<h3 id="언제-교체-또는-사용-5">언제 교체 또는 사용<a class="heading-anchor" href="#언제-교체-또는-사용-5" aria-label="이 섹션 링크">#</a></h3>
+<p>옥전사 방진은 충분한데 <strong>“아 씨발 적 보병을 좀 빨리 죽이고 싶은데?”</strong> 싶을 때 추가한다.</p>
+<h3 id="캐세이-고유-느낌-5">캐세이 고유 느낌<a class="heading-anchor" href="#캐세이-고유-느낌-5" aria-label="이 섹션 링크">#</a></h3>
+<p>옥전사가 “대형 유지!” 할 때 <strong>“어차피 죽일 건데 왜 기다림?”</strong> 하고 튀어나가는 놈. 호랑이 계열은 전투 조화를 사용하지 않고, 공통 패시브 <strong>맹렬한 매복</strong>으로 돌격 속도·돌격 보너스와 일시적인 측면 공격 페널티 완화를 얻는다는 것이 앞선 설명의 핵심이다.</p>
+<h3 id="한-줄-평가-5">한 줄 평가<a class="heading-anchor" href="#한-줄-평가-5" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>캐세이에 부족했던 순수 공격형 보병. 옥전사가 붙잡으면 옆에서 가서 패는 놈.</strong></p>
+<h2 id="호랑이-전사-추적자">호랑이 전사 추적자<a class="heading-anchor" href="#호랑이-전사-추적자" aria-label="이 섹션 링크">#</a></h2>
+<h3 id="역할-6">역할<a class="heading-anchor" href="#역할-6" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>잠행 측면침투 + 사격교란 + 후방털이.</strong> 투척 원반·잠행·선봉배치·이동사격·근접전을 결합한 하이브리드다. 숨어서 접근 → 원반 투척 → 진형 교란 → 근접전으로 이어간다.</p>
+<h3 id="잘-잡는-상대-6">잘 잡는 상대<a class="heading-anchor" href="#잘-잡는-상대-6" aria-label="이 섹션 링크">#</a></h3>
+<p>사격병, 포병, 고립된 보병, 측면이 노출된 부대와 도주하는 적. 투척 공격의 장갑관통·대보병 성능을 활용하고, 약한 적은 근접전으로 마무리한다.</p>
+<h3 id="약한-상대-6">약한 상대<a class="heading-anchor" href="#약한-상대-6" aria-label="이 섹션 링크">#</a></h3>
+<p>정면에서 붙는 정예 근접보병과 대형 괴수. 장갑이 낮아 물리저항이 있어도 맞다이용은 아니다. 짧은 사거리 때문에 정규 사격진처럼 뒤에 세워놓는 운용도 맞지 않는다.</p>
+<h3 id="배치-위치-6">배치 위치<a class="heading-anchor" href="#배치-위치-6" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>선봉배치와 잠행을 활용할 측면</strong>, 이후 적 후방으로 침투한다. 적이 본대와 싸우기 시작할 때 사격진·포병을 노린다.</p>
+<blockquote>
+<p>포병: “어?”
+추적자: “ㅎㅇ.”</p>
+</blockquote>
+<h3 id="추천-카드-수-6">추천 카드 수<a class="heading-anchor" href="#추천-카드-수-6" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>1~2카드.</strong> 3~4카드부터는 별도로 챙길 게 많아 손이 바빠진다.</p>
+<h3 id="언제-교체-또는-사용-6">언제 교체 또는 사용<a class="heading-anchor" href="#언제-교체-또는-사용-6" aria-label="이 섹션 링크">#</a></h3>
+<p>상대의 포병·사격병이 많거나 진형이 길게 늘어졌을 때 채용. 정면 보병떼를 상대하는 목적이면 일반 호랑이 전사가 더 편하다.</p>
+<h3 id="캐세이-고유-느낌-6">캐세이 고유 느낌<a class="heading-anchor" href="#캐세이-고유-느낌-6" aria-label="이 섹션 링크">#</a></h3>
+<p>본대가 진형·조화·방어·사격을 챙길 때 혼자 <strong>잠행·선봉·이동사격·측면침투</strong>로 다른 게임 하는 새끼. 캐세이에 부족했던 기습·침투 옵션을 보충한다.</p>
+<h3 id="한-줄-평가-6">한 줄 평가<a class="heading-anchor" href="#한-줄-평가-6" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>보병 몸을 한 특수부대. 정면에 세우면 돈낭비, 뒤로 보내면 개꿀.</strong></p>
+<h2 id="철호조-호랑이-전사">철호조 호랑이 전사<a class="heading-anchor" href="#철호조-호랑이-전사" aria-label="이 섹션 링크">#</a></h2>
+<h3 id="역할-7">역할<a class="heading-anchor" href="#역할-7" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>중장갑 대형 유닛·괴수 전문 엘리트 근접보병.</strong> 높은 장갑관통 비중과 대형 보너스를 활용하는 공격적인 대형 사냥꾼이다.</p>
+<h3 id="잘-잡는-상대-7">잘 잡는 상대<a class="heading-anchor" href="#잘-잡는-상대-7" aria-label="이 섹션 링크">#</a></h3>
+<p>괴수, 기병, 괴수 기병, 대형 군주와 중장갑 대형 유닛. <strong>“큰 놈 어디 있음?”</strong> 하고 투입할 고급 대형킬러.</p>
+<h3 id="약한-상대-7">약한 상대<a class="heading-anchor" href="#약한-상대-7" aria-label="이 섹션 링크">#</a></h3>
+<p>원거리 집중사격. 싸구려 보병 떼에 오래 묶이는 상황도 손해다. 비싼 전문 병력의 시간을 잡졸에게 헌납하지 않는다.</p>
+<h3 id="배치-위치-7">배치 위치<a class="heading-anchor" href="#배치-위치-7" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>전열 양 끝 또는 후방 대괴수 예비대.</strong> 적 괴수가 들어오면 투입하고, 괴수가 오지 않으면 전선 측면을 압박한다.</p>
+<h3 id="추천-카드-수-7">추천 카드 수<a class="heading-anchor" href="#추천-카드-수-7" aria-label="이 섹션 링크">#</a></h3>
+<p>보통 <strong>1~3카드</strong>. 괴수가 많은 상대라면 <strong>3~4카드</strong>도 가능.</p>
+<h3 id="언제-교체-또는-사용-7">언제 교체 또는 사용<a class="heading-anchor" href="#언제-교체-또는-사용-7" aria-label="이 섹션 링크">#</a></h3>
+<p>오거, 카오스 괴수, 기병 러시, 대형 단일개체가 많은 상대에게 채용한다. 천룡근위대의 방진 유지와 구별해서 공격적인 대형 대응이 필요할 때 고른다.</p>
+<h3 id="캐세이-고유-느낌-7">캐세이 고유 느낌<a class="heading-anchor" href="#캐세이-고유-느낌-7" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>천룡근위대 = 정규군 엘리트 방진 / 철호조 = 빠르고 공격적인 엘리트 사냥꾼.</strong> 호랑이 계열의 기동성과 공격성을 고급 대형킬러 방향으로 살린 유닛이다.</p>
+<blockquote>
+<p>천룡근위대: “진형 유지하면서 대형 막음.”
+철호조: “저 괴수 어디있음? 가서 찢음.”</p>
+</blockquote>
+<h3 id="한-줄-평가-7">한 줄 평가<a class="heading-anchor" href="#한-줄-평가-7" aria-label="이 섹션 링크">#</a></h3>
+<p><strong>천룡근위대가 성벽이라면 철호조는 괴수 잡으러 뛰어나가는 진압반.</strong></p>
+<h2 id="근접-보병-전체-요약표">근접 보병 전체 요약표<a class="heading-anchor" href="#근접-보병-전체-요약표" aria-label="이 섹션 링크">#</a></h2>
+<table>
+<thead>
+<tr>
+  <th>유닛</th>
+  <th>역할·주 상대</th>
+  <th>주의할 상대·상황</th>
+  <th>배치</th>
+  <th>추천 카드 수</th>
+  <th>사용·교체 기준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>농민 장창병</td>
+  <td>싸구려 대기병 바리케이드</td>
+  <td>근접보병·사격</td>
+  <td>양 측면</td>
+  <td>초반 2~4, 이후 0~2</td>
+  <td>옥전사 할버드 확보 시 교체</td>
+</tr>
+<tr>
+  <td>옥전사</td>
+  <td>범용 방벽, 저~중급 보병 저지</td>
+  <td>AP 보병·정예 공격보병</td>
+  <td>중앙 전열</td>
+  <td>초중반 4~6</td>
+  <td>천룡으로 점진 교체, 2·3군단 재활용</td>
+</tr>
+<tr>
+  <td>옥전사 할버드</td>
+  <td>기병·괴수 경비원</td>
+  <td>집중사격·잡졸 소모전</td>
+  <td>양 끝 및 전열 혼합</td>
+  <td>2~3, 대형 다수면 4+</td>
+  <td>후반 천룡으로 강화, 보조군에서는 유지</td>
+</tr>
+<tr>
+  <td>천룡근위대</td>
+  <td>고급 방진 + 중장갑 대형 처리</td>
+  <td>AP 집중사격·비싼 소모</td>
+  <td>중앙 핵심 전열</td>
+  <td>2~4</td>
+  <td>옥전사가 뚫리면 1~2부터 추가</td>
+</tr>
+<tr>
+  <td>호랑이 전사</td>
+  <td>공격형 대보병</td>
+  <td>중장갑 정예·대형·장기전</td>
+  <td>측면·2선</td>
+  <td>2~4</td>
+  <td>방진 확보 후 보병 처리력 보강</td>
+</tr>
+<tr>
+  <td>호랑이 전사 추적자</td>
+  <td>잠행·교란·사격진/포병 습격</td>
+  <td>정예와 정면전·대형 괴수</td>
+  <td>선봉·측면 → 후방</td>
+  <td>1~2</td>
+  <td>사격·포병이 많거나 적 진형이 길 때</td>
+</tr>
+<tr>
+  <td>철호조 호랑이 전사</td>
+  <td>공격형 AP 대형킬러</td>
+  <td>집중사격·잡졸에게 묶임</td>
+  <td>양 끝·후방 예비대</td>
+  <td>1~3, 괴수 다수면 3~4</td>
+  <td>괴수·기병·대형 단일개체 대응</td>
+</tr>
+</tbody>
+</table>
+<h2 id="핵심-철학-기다리는-방진-찾아가는-호랑이">핵심 철학: 기다리는 방진, 찾아가는 호랑이<a class="heading-anchor" href="#핵심-철학-기다리는-방진-찾아가는-호랑이" aria-label="이 섹션 링크">#</a></h2>
+<blockquote>
+<p><strong>기존 캐세이 = 기다린다.</strong>
+<strong>호랑이 전사 = 찾아간다.</strong></p>
+</blockquote>
+<p>기본 4종은 <strong>“니들이 적을 세워놔. 뒤에서 우리가 쏠게.”</strong>가 중심이다. 농민부터 천룡근위대까지 진형을 유지하고 적을 받아내며 후방 화력을 지킨다. 천룡근위대는 그 과정에서 중장갑 대형을 직접 처리하는 힘도 갖춘다.</p>
+<p>호랑이 3종은 <strong>“아 알빠노 제가 가서 죽이고 오겠습니다.”</strong>다. 일반 호랑이는 보병을, 추적자는 사격진과 포병을, 철호조는 큰 놈을 찾아간다.</p>
+<p><strong>옥전사가 모루, 호랑이가 망치.</strong> 안정적인 방진에 필요한 호랑이를 섞으면, 기다리며 쏘던 군대에 직접 약점을 찌르는 선택지가 생긴다. 성벽은 성벽대로 세우고 출장 폭행 담당을 따로 붙이는 셈 ㅋㅋ.</p>
+</div>
+  <footer class="article-foot">이 페이지는 Markdown 소스에서 자동 생성되었습니다. 내용 수정은 <code>content/cathay/cathay_units_melee.md</code>만 고치면 됩니다.</footer>
+</article>
+</main>
+</div>
+
+<div class="search-modal" data-search-modal hidden>
+  <div class="search-panel">
+    <div class="search-head">
+      <input data-search-input type="search" placeholder="루앙, 사이클 차지, 옥전사…" autocomplete="off">
+      <button data-search-close aria-label="검색 닫기">✕</button>
+    </div>
+    <div class="search-hint">제목·본문·소제목 전체 검색 · <kbd>Esc</kbd> 닫기</div>
+    <div class="search-results" data-search-results></div>
+  </div>
+</div>
+</body>
+</html>

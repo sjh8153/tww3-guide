@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0e0f12">
+  <title>캐세이 원거리 보병 가이드 · TWW3 공략 위키</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <script defer src="../static/app.js"></script>
+</head>
+<body data-root="../">
+<header class="topbar">
+  <a class="brand" href="../index.html"><span class="brand-mark">III</span><span><b>TWW3</b><small>개인 공략 위키</small></span></a>
+  <button class="search-trigger" data-search-open aria-label="검색 열기">⌕ <span>검색</span><kbd>/</kbd></button>
+  <button class="mobile-nav" data-nav-toggle aria-label="메뉴 열기">☰</button>
+</header>
+<div class="shell">
+  <aside class="sidebar" data-sidebar>
+    <nav>
+      <a href="../index.html" class="nav-home">⌂ 전체 홈</a>
+      
+      <section class="nav-faction">
+        <a class="nav-faction-title" href="../cathay.html"><span class="sigil">龍</span>캐세이</a>
+        <div class="nav-links">
+          
+          <a href="../articles/cathay_skill_guide.html" >스킬트리</a>
+          
+          <a href="../articles/cathay_units_artillery.html" >포병·지원</a>
+          
+          <a href="../articles/cathay_units_cavalry.html" >기병</a>
+          
+          <a href="../articles/cathay_units_melee.html" >근접 보병</a>
+          
+          <a href="../articles/cathay_units_ranged.html" class="active">원거리 보병</a>
+          
+        </div>
+      </section>
+      
+      <section class="nav-faction">
+        <a class="nav-faction-title" href="../bretonnia.html"><span class="sigil">⚜</span>브레토니아</a>
+        <div class="nav-links">
+          
+          <a href="../articles/bretonnia_campaign_guide.html" >캠페인 운영</a>
+          
+          <a href="../articles/bretonnia_cavalry_controls.html" >기병 전투 조작</a>
+          
+          <a href="../articles/bretonnia_early_game_economy_armies.html" >초반 경제·군단</a>
+          
+          <a href="../articles/bretonnia_lords_heroes.html" >군주·영웅</a>
+          
+          <a href="../articles/bretonnia_skill_guide.html" >스킬트리</a>
+          
+        </div>
+      </section>
+      
+    </nav>
+    <div class="sidebar-foot">Markdown 기반 · 마지막 빌드 2026-09-22</div>
+  </aside>
+  <main class="main">
+<article class="article-wrap">
+  <header class="article-head">
+    <div class="crumb"><a href="../cathay.html">캐세이</a><span>›</span>원거리 보병</div>
+    <h1>캐세이 원거리 보병 가이드</h1>
+    <p>석궁·총·특수사격 운용</p>
+    <div class="article-meta"><span>원본: <code>cathay_units_ranged.md</code></span><span>문서 업데이트: 2026-09-22</span><span>사이트 빌드: 2026-09-22</span></div>
+  </header>
+  
+  <details class="toc" open><summary>이 문서에서 찾기</summary><div>
+    <a class="toc-l2" href="#1-농민-궁병">1. 농민 궁병</a><a class="toc-l2" href="#2-옥전사-석궁병">2. 옥전사 석궁병</a><a class="toc-l2" href="#3-옥전사-석궁병-방패">3. 옥전사 석궁병(방패)</a><a class="toc-l2" href="#4-철우박총병">4. 철우박총병</a><a class="toc-l2" href="#5-학포병">5. 학포병</a><a class="toc-l2" href="#6-천룡석궁병">6. 천룡석궁병</a><a class="toc-l2" href="#7-남고-척탄병">7. 남고 척탄병</a><a class="toc-l2" href="#8-호랑이-전사-추적자">8. 호랑이 전사 추적자</a><a class="toc-l2" href="#유명연대">유명연대</a><a class="toc-l3" href="#9-은빛길의-도적단">9. 은빛길의 도적단</a><a class="toc-l3" href="#10-콰이-인의-은총">10. 콰이 인의 은총</a><a class="toc-l2" href="#원거리-보병-전체-요약">원거리 보병 전체 요약</a><a class="toc-l2" href="#핵심-철학-표적마다-담당자가-따로-있다">핵심 철학: 표적마다 담당자가 따로 있다</a>
+  </div></details>
+  
+  <div class="markdown-body"><p>원본: 대화 「케세이」의 원거리 보병 설명회.<br />
+정리일: 2026-09-07.</p>
+<p>설명회에서 확인한 역할·운용·핵심 스탯만 남긴 플레이 메모. 최신 패치 전체 재검증 문서라기보다, 현재 대화에서 확정한 운용 기준을 빠르게 다시 불러오기 위한 소스다.</p>
+<h2 id="1-농민-궁병">1. 농민 궁병<a class="heading-anchor" href="#1-농민-궁병" aria-label="이 섹션 링크">#</a></h2>
+<p><strong>역할:</strong> 초반 저가형 대경장갑 물량 사격.</p>
+<ul>
+<li>핵심: <strong>120명 / 사거리 140 / 장갑 15 / AP 거의 없음 / 유지비 100.</strong></li>
+<li>경장갑 잡졸에게는 머릿수 덕분에 가격 대비 화력이 좋다.</li>
+<li>중·고장갑 상대로는 화살 효율이 급락한다.</li>
+<li>근접전은 처참하므로 적이 붙으면 사실상 끝.</li>
+<li>양 전열 뒤에서 음양 조화를 유지하며 사용.</li>
+</ul>
+<p><strong>추천:</strong> 초반 <strong>4~6카드</strong>, 옥전사 석궁병 확보 후 점진 퇴역. 2·3군단 저가 화력으로는 오래 사용 가능.</p>
+<p><strong>자동전투 vs 수동:</strong> 자동전투에서는 낮은 방어력 때문에 손실이 크게 날 수 있다. 수동에서는 안전하게 보호하고 경장갑을 점사하면 가성비가 좋다.</p>
+<p><strong>캐세이 맛:</strong> 유닛 자체는 평범한 싸구려 궁병이지만, 농민까지 음양 조화 안에서 굴린다는 점이 캐세이답다.</p>
+<p><strong>한 줄 평가:</strong><br />
+<strong>상대도 거지일 때는 존나 셈. 적이 갑옷 입기 시작하면 농민의 현실을 배움.</strong></p>
+<hr />
+<h2 id="2-옥전사-석궁병">2. 옥전사 석궁병<a class="heading-anchor" href="#2-옥전사-석궁병" aria-label="이 섹션 링크">#</a></h2>
+<p><strong>역할:</strong> 초중반 범용 주력 사격병.</p>
+<ul>
+<li>핵심: <strong>사거리 160 / 장갑 70 / AP는 중간 수준.</strong></li>
+<li>농민 궁병보다 사거리·생존력·사격 품질이 모두 크게 상승.</li>
+<li>경~중장갑 보병을 안정적으로 처리한다.</li>
+<li>고장갑 정예를 잡는 전문 AP 유닛은 아니지만 대부분의 상대에게 무난하다.</li>
+<li>갑옷 덕분에 맞사격과 우발적인 근접 접촉에도 농민보다 훨씬 안정적.</li>
+</ul>
+<p><strong>추천:</strong> 보통 <strong>4~6카드</strong>, 사격 중심 군단은 <strong>6~8카드</strong>도 가능.</p>
+<p><strong>교체:</strong> 묘영 주력군은 후반 천룡석궁병으로 점진 교체. 2·3군단에서는 가성비 때문에 장기 사용.</p>
+<p><strong>자동전투 vs 수동:</strong> 둘 다 안정적. 수동에서는 조화와 점사를 챙기면 더 좋다.</p>
+<p><strong>캐세이 맛:</strong> 장갑 70짜리 정규 보병이 뒤에서 석궁을 쏜다. 기동력보다 <strong>진형·장갑·지속사격</strong>에 투자한 캐세이식 사격병.</p>
+<p><strong>한 줄 평가:</strong><br />
+<strong>캐세이 국민 사격병. 특별히 미친 부분은 없는데 버릴 구석도 없음.</strong></p>
+<hr />
+<h2 id="3-옥전사-석궁병-방패">3. 옥전사 석궁병(방패)<a class="heading-anchor" href="#3-옥전사-석궁병-방패" aria-label="이 섹션 링크">#</a></h2>
+<p><strong>역할:</strong> 사격전에 더 강한 옥전사 석궁병.</p>
+<ul>
+<li>기본 사격 성능은 일반 옥석궁과 거의 동일.</li>
+<li>핵심 차이는 <strong>35% 방패 + 더 높은 근접방어.</strong></li>
+<li>적 궁병·석궁병과 정면 맞사격할 때 생존력이 크게 좋아진다.</li>
+<li>방패가 있다고 근접병이 되는 것은 아니다.</li>
+</ul>
+<p><strong>추천:</strong> 경제가 되면 일반 옥석궁 자리에 <strong>4~6카드</strong>까지 사용 가능. 적 사격 비중이 높을수록 가치 상승.</p>
+<p><strong>교체:</strong> 후반에는 천룡석궁병이 고급 대체재.</p>
+<p><strong>자동전투 vs 수동:</strong> 방어력이 높아 자동전투에서도 안정적. 수동에서는 맞사격 상황에서 방패 체감이 크다.</p>
+<p><strong>캐세이 맛:</strong> 갑옷 입은 석궁병에게 방패까지 지급한 <strong>존나 캐세이다운 과잉 방어 설계.</strong></p>
+<p><strong>한 줄 평가:</strong><br />
+<strong>옥석궁 국밥에 계란 추가. 돈 조금 더 내고 쳐맞을 때 덜 억울함.</strong></p>
+<hr />
+<h2 id="4-철우박총병">4. 철우박총병<a class="heading-anchor" href="#4-철우박총병" aria-label="이 섹션 링크">#</a></h2>
+<p><strong>역할:</strong> 초근거리 장갑관통 폭딜.</p>
+<ul>
+<li>핵심: <strong>사거리 90 / 다중 산탄 / 높은 AP 비중.</strong></li>
+<li>큰 목표에게 여러 투사체가 전부 박히면 피해가 폭발적이다.</li>
+<li>괴수, 기병, 중장갑 보병 처리에 특히 강하다.</li>
+<li>사거리가 짧고 직사 화기라 <strong>사선 관리가 핵심</strong>.</li>
+<li>아군 전열 바로 뒤에 일자로 세우면 앞의 아군에게 가려 못 쏘는 경우가 많다.</li>
+<li>측면, 보병 사이 틈, 고지대에서 사용.</li>
+</ul>
+<p><strong>추천:</strong> 처음 <strong>1~2카드</strong>, 숙련되면 3카드 정도.</p>
+<p><strong>자동전투 vs 수동:</strong> 수동전투 체감차가 매우 큼. 각이 나오면 미친 딜, 각이 안 나오면 총 들고 관전.</p>
+<p><strong>캐세이 맛:</strong> 안전거리에서 쏘는 캐세이 사격진 중 혼자 적 코앞까지 가는 근거리 살인 담당.</p>
+<p><strong>한 줄 평가:</strong><br />
+<strong>90미터까지는 병신 같고, 90미터 안에 들어온 순간 상대가 병신 됨.</strong></p>
+<hr />
+<h2 id="5-학포병">5. 학포병<a class="heading-anchor" href="#5-학포병" aria-label="이 섹션 링크">#</a></h2>
+<p><strong>역할:</strong> 초장거리 고가치 표적 저격.</p>
+<ul>
+<li>핵심: <strong>32명 / 사거리 275 / 높은 AP / Shieldbreaker 계열 성능.</strong></li>
+<li>군주, 영웅, 괴수, 중장갑 기병 등 비싼 소수 목표 처리에 강함.</li>
+<li>싸구려 보병 떼에 쏘면 화력 낭비.</li>
+<li>직사 화기라 지형·사선 영향을 많이 받는다.</li>
+<li>모델 수가 적어 기병·비행 유닛에게 물리면 치명적.</li>
+</ul>
+<p><strong>추천:</strong> <strong>1~2카드</strong>, 고가치 대형 목표가 많으면 3카드까지.</p>
+<p><strong>자동전투 vs 수동:</strong> 수동에서 표적을 직접 골라줄 때 가치가 훨씬 높다.</p>
+<p><strong>캐세이 맛:</strong> 석궁은 전열, 포병은 덩어리, 학포는 <strong>비싼 새끼만 따로 해고</strong>하는 역할 분담.</p>
+<p><strong>한 줄 평가:</strong><br />
+<strong>“저기 제일 비싸 보이는 새끼 죽여.” 그게 학포 운용법의 90%.</strong></p>
+<hr />
+<h2 id="6-천룡석궁병">6. 천룡석궁병<a class="heading-anchor" href="#6-천룡석궁병" aria-label="이 섹션 링크">#</a></h2>
+<p><strong>역할:</strong> 후반 범용 AP 주력 사격병.</p>
+<ul>
+<li>핵심: <strong>장갑 95 / 방패 35% / 사거리 160 / 2연발 AP 석궁.</strong></li>
+<li>옥석궁보다 AP 비중이 크게 높아 중장갑·정예 상대로 후반에도 화력이 썩지 않는다.</li>
+<li>중장갑 보병, 기병, 괴수, 정예병 등 대부분의 고가치 목표에 강함.</li>
+<li>사격병치고 근접 생존력도 좋지만, 비싼 사격병을 근접전에 묶는 것 자체가 손해.</li>
+<li>가장 큰 단점은 높은 모집비·유지비.</li>
+</ul>
+<p><strong>추천:</strong> 묘영 주력군 기준 <strong>4~6카드</strong>.</p>
+<p><strong>교체:</strong> 옥석궁이 후반 적 장갑을 상대로 답답해지기 시작하면 점진 교체. 2·3군단까지 전부 천룡으로 도배하면 재정이 먼저 뒤진다.</p>
+<p><strong>자동전투 vs 수동:</strong> 장갑·방패 덕분에 자동전투에서도 안정적. 수동에서는 중장갑 고가치 목표 점사 시 돈값 확실.</p>
+<p><strong>캐세이 맛:</strong> 보통 최상급 사격병은 물리면 죽는데 얘는 <strong>사격도 존나 센데 갑옷과 방패까지 챙김.</strong></p>
+<p><strong>한 줄 평가:</strong><br />
+<strong>캐세이 정규 사격의 완성형. 뭘 쏠지 모르겠으면 비싼 놈 찍어라. 대체로 죽음.</strong></p>
+<hr />
+<h2 id="7-남고-척탄병">7. 남고 척탄병<a class="heading-anchor" href="#7-남고-척탄병" aria-label="이 섹션 링크">#</a></h2>
+<p><strong>역할:</strong> 밀집 보병 광역 폭파 + 전투 디버프.</p>
+<ul>
+<li>핵심: <strong>사거리 55 / 폭발 공격 / 짧은 교전거리.</strong></li>
+<li>밀집된 보병 여러 모델을 동시에 때릴 때 가치가 높다.</li>
+<li>단일 괴수처럼 모델 수가 적은 목표에는 폭발 범위가 낭비된다.</li>
+<li>특수 기절/근접전 디버프 능력으로 중요한 전선 싸움을 유리하게 만들 수 있다.</li>
+<li>가장 큰 문제는 <strong>짧은 사거리와 아군 오폭</strong>.</li>
+<li>전열 바로 뒤 자동사격보다는 측면·비스듬한 각도에서 투척하는 편이 안전하다.</li>
+</ul>
+<p><strong>추천:</strong> <strong>1카드</strong>, 좋아하면 2카드.</p>
+<p><strong>자동전투 vs 수동:</strong> 수동전투 숙련도 차이가 매우 큼. 잘 쓰면 적 보병을 폭파하고, 못 쓰면 옥전사와 적군을 공평하게 폭파한다.</p>
+<p><strong>캐세이 맛:</strong> 전열이 적을 멈춰 세우면 뒤에서 “좋아 거기 그대로 있어” 하고 폭탄을 던지는 병종.</p>
+<p><strong>한 줄 평가:</strong><br />
+<strong>적이 뭉치면 개꿀, 아군까지 뭉쳐 있으면 참사. 수류탄보다 플레이어 뇌가 중요함.</strong></p>
+<hr />
+<h2 id="8-호랑이-전사-추적자">8. 호랑이 전사 추적자<a class="heading-anchor" href="#8-호랑이-전사-추적자" aria-label="이 섹션 링크">#</a></h2>
+<p>근접 보병 가이드에서 상세 설명 완료. 여기서는 원거리 역할만 정리.</p>
+<p><strong>역할:</strong> 잠행 접근 → 고화력 투척 → 후방 근접습격.</p>
+<ul>
+<li>핵심: <strong>사거리 70 / 탄약 2 / 강한 투척 공격 / 선봉배치·잠행·이동사격.</strong></li>
+<li>정규 사격라인이 아니라 포병·사격병을 노리는 특수 침투병.</li>
+<li>탄약 소진 후에도 높은 근접 능력으로 계속 싸울 수 있다.</li>
+<li>정면에서 정예 근접병·괴수와 붙는 용도는 아니다.</li>
+</ul>
+<p><strong>추천:</strong> <strong>1~2카드.</strong></p>
+<p><strong>자동전투 vs 수동:</strong> 잠행과 우회의 가치는 수동전투에서 훨씬 높다.</p>
+<p><strong>캐세이 맛:</strong> 다른 캐세이가 진형 맞출 때 혼자 <strong>“알빠노 포병 죽이고 옴.”</strong></p>
+<p><strong>한 줄 평가:</strong><br />
+<strong>원거리 보병 카테고리에 숨어 들어온 특수부대. 후방 보내셈.</strong></p>
+<hr />
+<h2 id="유명연대">유명연대<a class="heading-anchor" href="#유명연대" aria-label="이 섹션 링크">#</a></h2>
+<h3 id="9-은빛길의-도적단">9. 은빛길의 도적단<a class="heading-anchor" href="#9-은빛길의-도적단" aria-label="이 섹션 링크">#</a></h3>
+<p>농민 궁병 유명연대.</p>
+<p><strong>역할:</strong> 경장갑 사격 + 화염 연계 지원.</p>
+<ul>
+<li>선봉배치와 화염 공격, 화염 취약 관련 유틸이 핵심.</li>
+<li>기본적으로는 농민 궁병 계열이라 중장갑 정예를 직접 갈아버리는 유닛은 아니다.</li>
+<li>다른 화염 공격 수단과 연계할 때 가치가 상승.</li>
+</ul>
+<p><strong>추천:</strong> 유명연대이므로 1카드.</p>
+<p><strong>한 줄 평가:</strong><br />
+<strong>농민 궁병이 짬 차더니 “저 새끼 불 잘 타게 해드림”을 배워옴.</strong></p>
+<h3 id="10-콰이-인의-은총">10. 콰이 인의 은총<a class="heading-anchor" href="#10-콰이-인의-은총" aria-label="이 섹션 링크">#</a></h3>
+<p>천룡석궁병 유명연대.</p>
+<p><strong>역할:</strong> 더 긴 사거리와 높은 AP 화력에 집중한 정예 사격.</p>
+<ul>
+<li>기본 천룡석궁보다 사거리·재장전·장갑관통 화력이 강화.</li>
+<li>대신 기본 천룡석궁의 방패가 빠져 방어 안정성은 감소.</li>
+<li>안전한 후방에서 적 정예를 빠르게 제거하는 용도.</li>
+</ul>
+<p><strong>추천:</strong> 유명연대이므로 1카드.</p>
+<p><strong>한 줄 평가:</strong><br />
+<strong>천룡석궁의 안전장치 하나 떼고 화력 리미터 풀어놓은 버전.</strong></p>
+<hr />
+<h2 id="원거리-보병-전체-요약">원거리 보병 전체 요약<a class="heading-anchor" href="#원거리-보병-전체-요약" aria-label="이 섹션 링크">#</a></h2>
+<table>
+<thead>
+<tr>
+  <th>유닛</th>
+  <th>핵심 역할</th>
+  <th style="text-align:right">추천</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>농민 궁병</td>
+  <td>초반 경장갑 물량처리</td>
+  <td style="text-align:right">4~6 → 감소</td>
+</tr>
+<tr>
+  <td>옥전사 석궁병</td>
+  <td>초중반 범용 지속딜</td>
+  <td style="text-align:right">4~6</td>
+</tr>
+<tr>
+  <td>옥석궁(방패)</td>
+  <td>맞사격에 강한 범용딜</td>
+  <td style="text-align:right">4~6</td>
+</tr>
+<tr>
+  <td>철우박총병</td>
+  <td>근거리 AP 폭딜</td>
+  <td style="text-align:right">1~2</td>
+</tr>
+<tr>
+  <td>학포병</td>
+  <td>고가치 표적 저격</td>
+  <td style="text-align:right">1~2</td>
+</tr>
+<tr>
+  <td>천룡석궁병</td>
+  <td>후반 범용 AP 주력</td>
+  <td style="text-align:right">4~6</td>
+</tr>
+<tr>
+  <td>남고 척탄병</td>
+  <td>밀집 보병 광역폭파</td>
+  <td style="text-align:right">1~2</td>
+</tr>
+<tr>
+  <td>호랑이 추적자</td>
+  <td>잠행 후방침투</td>
+  <td style="text-align:right">1~2</td>
+</tr>
+<tr>
+  <td>은빛길의 도적단</td>
+  <td>화염 연계</td>
+  <td style="text-align:right">1</td>
+</tr>
+<tr>
+  <td>콰이 인의 은총</td>
+  <td>정예 장거리 AP</td>
+  <td style="text-align:right">1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="핵심-철학-표적마다-담당자가-따로-있다">핵심 철학: 표적마다 담당자가 따로 있다<a class="heading-anchor" href="#핵심-철학-표적마다-담당자가-따로-있다" aria-label="이 섹션 링크">#</a></h2>
+<p>캐세이 기본 근접병은 <strong>“적을 세워놓는 역할”</strong>에 가깝다.</p>
+<p>원거리 병력은 그 뒤에서 표적별로 역할이 갈린다.</p>
+<ul>
+<li>농민 궁병: 경장갑 잡졸.</li>
+<li>옥전사 석궁: 범용 보병.</li>
+<li>방패 옥석궁: 적 원거리와 맞사격.</li>
+<li>철우박: 가까운 중장갑·괴수.</li>
+<li>학포: 멀리 있는 고가치 목표.</li>
+<li>천룡석궁: 후반 중장갑·정예 전반.</li>
+<li>척탄병: 밀집 보병.</li>
+<li>추적자: 적 후방 사격진과 포병.</li>
+</ul>
+<p>즉 캐세이는 단순한 <strong>원거리 강한 팩션</strong>이 아니라, 표적별로 살인 담당자가 따로 있는 군대다.</p>
+<blockquote>
+<p><strong>전열이 적을 멈춘다.<br />
+원거리가 표적을 분류한다.<br />
+담당자가 죽인다.</strong></p>
+</blockquote>
+<p>근접보병이 민원 접수창구라면 <strong>원거리 보병이 실제 처리부서다 ㅋㅋ.</strong></p>
+</div>
+  <footer class="article-foot">이 페이지는 Markdown 소스에서 자동 생성되었습니다. 내용 수정은 <code>content/cathay/cathay_units_ranged.md</code>만 고치면 됩니다.</footer>
+</article>
+</main>
+</div>
+
+<div class="search-modal" data-search-modal hidden>
+  <div class="search-panel">
+    <div class="search-head">
+      <input data-search-input type="search" placeholder="루앙, 사이클 차지, 옥전사…" autocomplete="off">
+      <button data-search-close aria-label="검색 닫기">✕</button>
+    </div>
+    <div class="search-hint">제목·본문·소제목 전체 검색 · <kbd>Esc</kbd> 닫기</div>
+    <div class="search-results" data-search-results></div>
+  </div>
+</div>
+</body>
+</html>

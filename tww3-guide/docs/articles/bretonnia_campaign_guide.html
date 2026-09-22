@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0e0f12">
+  <title>브레토니아 종족 운영 가이드 · TWW3 공략 위키</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <script defer src="../static/app.js"></script>
+</head>
+<body data-root="../">
+<header class="topbar">
+  <a class="brand" href="../index.html"><span class="brand-mark">III</span><span><b>TWW3</b><small>개인 공략 위키</small></span></a>
+  <button class="search-trigger" data-search-open aria-label="검색 열기">⌕ <span>검색</span><kbd>/</kbd></button>
+  <button class="mobile-nav" data-nav-toggle aria-label="메뉴 열기">☰</button>
+</header>
+<div class="shell">
+  <aside class="sidebar" data-sidebar>
+    <nav>
+      <a href="../index.html" class="nav-home">⌂ 전체 홈</a>
+      
+      <section class="nav-faction">
+        <a class="nav-faction-title" href="../cathay.html"><span class="sigil">龍</span>캐세이</a>
+        <div class="nav-links">
+          
+          <a href="../articles/cathay_skill_guide.html" >스킬트리</a>
+          
+          <a href="../articles/cathay_units_artillery.html" >포병·지원</a>
+          
+          <a href="../articles/cathay_units_cavalry.html" >기병</a>
+          
+          <a href="../articles/cathay_units_melee.html" >근접 보병</a>
+          
+          <a href="../articles/cathay_units_ranged.html" >원거리 보병</a>
+          
+        </div>
+      </section>
+      
+      <section class="nav-faction">
+        <a class="nav-faction-title" href="../bretonnia.html"><span class="sigil">⚜</span>브레토니아</a>
+        <div class="nav-links">
+          
+          <a href="../articles/bretonnia_campaign_guide.html" class="active">캠페인 운영</a>
+          
+          <a href="../articles/bretonnia_cavalry_controls.html" >기병 전투 조작</a>
+          
+          <a href="../articles/bretonnia_early_game_economy_armies.html" >초반 경제·군단</a>
+          
+          <a href="../articles/bretonnia_lords_heroes.html" >군주·영웅</a>
+          
+          <a href="../articles/bretonnia_skill_guide.html" >스킬트리</a>
+          
+        </div>
+      </section>
+      
+    </nav>
+    <div class="sidebar-foot">Markdown 기반 · 마지막 빌드 2026-09-22</div>
+  </aside>
+  <main class="main">
+<article class="article-wrap">
+  <header class="article-head">
+    <div class="crumb"><a href="../bretonnia.html">브레토니아</a><span>›</span>캠페인 운영</div>
+    <h1>브레토니아 종족 운영 가이드</h1>
+    <p>기사도·농민 경제·확장 판단</p>
+    <div class="article-meta"><span>원본: <code>bretonnia_campaign_guide.md</code></span><span>문서 업데이트: 2026-09-22</span><span>사이트 빌드: 2026-09-22</span></div>
+  </header>
+  
+  <details class="toc" open><summary>이 문서에서 찾기</summary><div>
+    <a class="toc-l2" href="#핵심-철학">핵심 철학</a><a class="toc-l2" href="#농민-경제">농민 경제</a><a class="toc-l2" href="#기사도">기사도</a><a class="toc-l2" href="#서약-맹세">서약 / 맹세</a><a class="toc-l2" href="#초반-확장-철학">초반 확장 철학</a><a class="toc-l3" href="#북쪽-vs-남쪽">북쪽 vs 남쪽</a><a class="toc-l2" href="#오크-산악-거점-운용">오크 산악 거점 운용</a><a class="toc-l2" href="#남쪽-뱀파이어와-인간-방파제">남쪽 뱀파이어와 인간 방파제</a><a class="toc-l2" href="#농장-vs-공장">농장 vs 공장</a><a class="toc-l3" href="#농장">농장</a><a class="toc-l3" href="#공장">공장</a><a class="toc-l2" href="#거점-수비와-확장">거점 수비와 확장</a><a class="toc-l2" href="#한-줄-정리">한 줄 정리</a>
+  </div></details>
+  
+  <div class="markdown-body"><p>기준: 현재 대화에서 정리한 루앙 레옹쿠르 캠페인 운용 메모.
+주의: 최신 패치 전체 재검증 문서가 아니라, 대화에서 확정한 운용 방향을 빠르게 다시 불러오기 위한 소스다.</p>
+<h2 id="핵심-철학">핵심 철학<a class="heading-anchor" href="#핵심-철학" aria-label="이 섹션 링크">#</a></h2>
+<blockquote>
+<p><strong>농민은 시간을 벌고, 기사는 전장을 해결한다.</strong></p>
+</blockquote>
+<p>브레토니아는 보병이 주력이고 기병이 보조인 팩션이 아니다.</p>
+<ul>
+<li>기사 = 주력 살상 병력</li>
+<li>농민 = 기사에게 돌격각과 시간을 만들어주는 보조 병력</li>
+<li>전투의 핵심 = 적을 묶고, 측후방에서 기사로 반복 돌격</li>
+</ul>
+<p>케세이가 방진과 사격 분업이라면 브레토니아는 <strong>기병 기동전과 사이클 차지</strong>가 중심이다.</p>
+<h2 id="농민-경제">농민 경제<a class="heading-anchor" href="#농민-경제" aria-label="이 섹션 링크">#</a></h2>
+<p>브레토니아는 돈만 보는 팩션이 아니다.</p>
+<p><strong>돈 + 농민 한도</strong>를 같이 본다.</p>
+<ul>
+<li>농민 병력을 너무 많이 쓰면 농업 경제에 악영향이 생긴다.</li>
+<li>싸다고 농민을 무지성으로 도배하지 않는다.</li>
+<li>필요한 전열, 궁병, 포병만 유지하고 나머지 예산은 기사와 경제에 돌린다.</li>
+</ul>
+<p>핵심 판단:</p>
+<blockquote>
+<p><strong>이 농민 카드가 지금 기사들이 일하는 데 필요한가?</strong></p>
+</blockquote>
+<h2 id="기사도">기사도<a class="heading-anchor" href="#기사도" aria-label="이 섹션 링크">#</a></h2>
+<p>기사도는 단순 승리 게이지가 아니라 진영 전체 성장 보너스와 연결된다.</p>
+<ul>
+<li>전투와 기사도적인 행동으로 쌓는다.</li>
+<li>비기사도적 행동은 손해를 볼 수 있다.</li>
+<li>높은 기사도는 기사 모집과 전군 성능에 도움을 준다.</li>
+</ul>
+<p>즉 브레토니아는 단순 약탈국가가 아니라 <strong>전쟁을 하되 기사도 시스템까지 함께 관리하는 팩션</strong>이다.</p>
+<h2 id="서약-맹세">서약 / 맹세<a class="heading-anchor" href="#서약-맹세" aria-label="이 섹션 링크">#</a></h2>
+<p>군주와 팔라딘은 기사 서약, 예언자와 시녀는 대응되는 맹세 계통을 사용한다.</p>
+<p>가장 중요한 실전 포인트:</p>
+<blockquote>
+<p><strong>새 군주 뽑으면 스킬보다 먼저 서약부터 확인.</strong></p>
+</blockquote>
+<p>고급 기사 운용은 군주의 서약 상태에 크게 영향을 받는다.</p>
+<p>서약 없는 군주에게 고급 기사들을 몰아주면 유지비가 미쳐 날뛸 수 있다.</p>
+<h2 id="초반-확장-철학">초반 확장 철학<a class="heading-anchor" href="#초반-확장-철학" aria-label="이 섹션 링크">#</a></h2>
+<p>루앙 초반은 영토를 많이 먹는 것보다 <strong>전선을 줄이는 것</strong>이 중요하다.</p>
+<h3 id="북쪽-vs-남쪽">북쪽 vs 남쪽<a class="heading-anchor" href="#북쪽-vs-남쪽" aria-label="이 섹션 링크">#</a></h3>
+<ul>
+<li>남쪽 육상 적대세력부터 하나씩 삭제하는 쪽이 안정적.</li>
+<li>북쪽 해상 세력은 상륙군만 쳐내고 초반에 굳이 바다 건너 원정하지 않는다.</li>
+<li>한 세력을 때리기 시작하면 중간에 돌아오지 말고 멸망까지 밀어버리는 편이 좋다.</li>
+</ul>
+<p>핵심:</p>
+<blockquote>
+<p><strong>도시 하나 먹는 게 목표가 아니라 전쟁창에서 적 이름 하나 지우는 게 목표.</strong></p>
+</blockquote>
+<h2 id="오크-산악-거점-운용">오크 산악 거점 운용<a class="heading-anchor" href="#오크-산악-거점-운용" aria-label="이 섹션 링크">#</a></h2>
+<p>산악의 그린스킨 세력은 이미 전쟁 중이라면 먼저 지우는 편이 좋다.</p>
+<p>하지만 산악 거점 자체는 초반에 좋은 영토가 아닐 수 있다.</p>
+<ul>
+<li>오염이 높음</li>
+<li>통치 관리가 빡셈</li>
+<li>병력을 주둔시키면 주력군이 묶임</li>
+<li>남쪽 뱀파이어 대응이 늦어짐</li>
+</ul>
+<p>따라서:</p>
+<blockquote>
+<p><strong>오크를 죽이러 가는 것이지 산을 먹으러 가는 게 아니다.</strong></p>
+</blockquote>
+<p>가능하면 점령 후 우호 세력에게 판매하거나, 전략적으로 필요하지 않으면 장기 보유에 집착하지 않는다.</p>
+<h2 id="남쪽-뱀파이어와-인간-방파제">남쪽 뱀파이어와 인간 방파제<a class="heading-anchor" href="#남쪽-뱀파이어와-인간-방파제" aria-label="이 섹션 링크">#</a></h2>
+<p>남쪽 인간 세력이 뱀파이어와 싸우고 있다면 그 인간 세력은 당장 방파제 역할을 한다.</p>
+<ul>
+<li>뱀파이어와 바로 전쟁을 추가하지 않는다.</li>
+<li>인간 세력이 버티는 동안 오크를 정리한다.</li>
+<li>오크 삭제 후 뱀파이어가 먹은 브레토니아 땅을 수복하는 흐름이 편하다.</li>
+</ul>
+<p>주의:</p>
+<ul>
+<li>인간 세력이 너무 빨리 멸망해 뱀파이어가 직접 국경을 맞대기 시작하면 즉시 대응 준비.</li>
+<li>그래도 이미 전쟁 중인 오크와 동시에 새 전쟁을 여는 건 초반엔 위험하다.</li>
+</ul>
+<h2 id="농장-vs-공장">농장 vs 공장<a class="heading-anchor" href="#농장-vs-공장" aria-label="이 섹션 링크">#</a></h2>
+<p>기본값은 <strong>농장 우선</strong>.</p>
+<h3 id="농장">농장<a class="heading-anchor" href="#농장" aria-label="이 섹션 링크">#</a></h3>
+<ul>
+<li>보통 수익성이 좋다.</li>
+<li>농민 경제 한도의 영향을 직접 받는다.</li>
+<li>안전한 후방 영지, 핵심 돈통에 적합.</li>
+</ul>
+<h3 id="공장">공장<a class="heading-anchor" href="#공장" aria-label="이 섹션 링크">#</a></h3>
+<ul>
+<li>농민 경제 의존도가 낮다.</li>
+<li>농민 한도 초과가 잦거나 농업 효율이 떨어지는 상황에서 고려.</li>
+</ul>
+<p>판단 기준:</p>
+<ul>
+<li>농민 한도 여유 있음 → 농장</li>
+<li>농민 한도 빡빡함/초과 → 공장 고려</li>
+<li>안전한 핵심 영지 → 웬만하면 농장</li>
+</ul>
+<p>한 영지에서 농장과 공장을 마구 섞기보다 방향을 정하는 편이 편하다.</p>
+<h2 id="거점-수비와-확장">거점 수비와 확장<a class="heading-anchor" href="#거점-수비와-확장" aria-label="이 섹션 링크">#</a></h2>
+<p>초반에는 모든 도시를 완벽하게 지키려 하지 않는다.</p>
+<ul>
+<li>쿠론처럼 절대 잃으면 안 되는 핵심 도시부터 수비 강화</li>
+<li>나머지는 성장과 경제 우선</li>
+<li>방어건물을 모든 도시에 깔아 경제를 죽이지 않는다</li>
+</ul>
+<blockquote>
+<p>도시마다 성벽을 지었더니 적도 못 들어오고 돈도 못 들어오는 상황은 피한다.</p>
+</blockquote>
+<h2 id="한-줄-정리">한 줄 정리<a class="heading-anchor" href="#한-줄-정리" aria-label="이 섹션 링크">#</a></h2>
+<p><strong>좋은 땅 몇 개를 잘 키우고, 기사군단은 밖에 나가 적을 지운다.</strong></p>
+<p>브레토니아는 영토 도배보다 <strong>전선 관리 + 경제 기반 + 서약 + 기사단 질</strong>이 중요하다.</p>
+</div>
+  <footer class="article-foot">이 페이지는 Markdown 소스에서 자동 생성되었습니다. 내용 수정은 <code>content/bretonnia/bretonnia_campaign_guide.md</code>만 고치면 됩니다.</footer>
+</article>
+</main>
+</div>
+
+<div class="search-modal" data-search-modal hidden>
+  <div class="search-panel">
+    <div class="search-head">
+      <input data-search-input type="search" placeholder="루앙, 사이클 차지, 옥전사…" autocomplete="off">
+      <button data-search-close aria-label="검색 닫기">✕</button>
+    </div>
+    <div class="search-hint">제목·본문·소제목 전체 검색 · <kbd>Esc</kbd> 닫기</div>
+    <div class="search-results" data-search-results></div>
+  </div>
+</div>
+</body>
+</html>

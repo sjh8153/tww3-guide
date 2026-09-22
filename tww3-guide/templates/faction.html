@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}{{ faction.name }} · TWW3 공략 위키{% endblock %}
+{% block content %}
+<section class="faction-hero faction-{{ faction_key }}">
+  <span class="faction-hero-icon">{{ faction.icon }}</span>
+  <div><p class="eyebrow">FACTION GUIDE</p><h1>{{ faction.name }}</h1><p>{{ faction.tagline }}</p></div>
+</section>
+<section class="doc-grid">
+{% for a in articles %}
+<a class="doc-card" href="{{ a.url }}">
+  <small>{{ '%02d'|format(loop.index) }}</small>
+  <h2>{{ a.label }}</h2>
+  <p>{{ a.description }}</p>
+  <span>{{ a.excerpt }}</span>
+  <b>열기 →</b>
+</a>
+{% endfor %}
+</section>
+{% endblock %}
