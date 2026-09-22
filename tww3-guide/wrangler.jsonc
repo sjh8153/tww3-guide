@@ -1,6 +1,7 @@
 {
   "name": "tww3-guide",
   "compatibility_date": "2026-09-22",
+  "workers_dev": true,
   "assets": {
     "directory": "./docs"
   }
