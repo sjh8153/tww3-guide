@@ -3,17 +3,32 @@
 {% block content %}
 <section class="faction-hero faction-{{ faction_key }}">
   <span class="faction-hero-icon">{{ faction.icon }}</span>
-  <div><p class="eyebrow">FACTION GUIDE</p><h1>{{ faction.name }}</h1><p>{{ faction.tagline }}</p></div>
+  <div><p class="eyebrow">FACTION GUIDE</p><h1>{{ faction.name }}</h1><p>{{ faction.tagline }} · {{ page_articles|length }}개 공략</p></div>
 </section>
-<section class="doc-grid">
-{% for a in articles %}
-<a class="doc-card" href="{{ a.url }}">
-  <small>{{ '%02d'|format(loop.index) }}</small>
-  <h2>{{ a.label }}</h2>
-  <p>{{ a.description }}</p>
-  <span>{{ a.excerpt }}</span>
-  <b>열기 →</b>
-</a>
+
+<nav class="chapter-jump" aria-label="챕터 바로가기">
+{% for section in sections %}
+  <a href="#chapter-{{ section.key }}">{{ section.label }} <span>{{ section.articles|length }}</span></a>
 {% endfor %}
+</nav>
+
+{% for section in sections %}
+<section class="chapter-section" id="chapter-{{ section.key }}">
+  <div class="chapter-head">
+    <div><span>CHAPTER {{ '%02d'|format(loop.index) }}</span><h2>{{ section.label }}</h2></div>
+    <small>{{ section.articles|length }}개 문서</small>
+  </div>
+  <div class="doc-grid">
+  {% for a in section.articles %}
+    <a class="doc-card" href="{{ a.url }}">
+      <small>{{ a.category_label }}</small>
+      <h2>{{ a.label }}</h2>
+      <p>{{ a.description }}</p>
+      <span>{{ a.excerpt }}</span>
+      <b>열기 →</b>
+    </a>
+  {% endfor %}
+  </div>
 </section>
+{% endfor %}
 {% endblock %}
