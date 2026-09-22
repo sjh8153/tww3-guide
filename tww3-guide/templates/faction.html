@@ -1,34 +1,44 @@
 {% extends 'base.html' %}
 {% block title %}{{ faction.name }} · TWW3 공략 위키{% endblock %}
 {% block content %}
-<section class="faction-hero faction-{{ faction_key }}">
+<section class="page-hero faction-hero faction-{{ faction_key }}">
   <span class="faction-hero-icon">{{ faction.icon }}</span>
-  <div><p class="eyebrow">FACTION GUIDE</p><h1>{{ faction.name }}</h1><p>{{ faction.tagline }} · {{ page_articles|length }}개 공략</p></div>
+  <div>
+    <p class="eyebrow">FACTION GUIDE</p>
+    <h1>{{ faction.name }}</h1>
+    <p>{{ faction.tagline }}</p>
+  </div>
 </section>
 
-<nav class="chapter-jump" aria-label="챕터 바로가기">
+<nav class="section-tabs" aria-label="주제 바로가기">
 {% for section in sections %}
-  <a href="#chapter-{{ section.key }}">{{ section.label }} <span>{{ section.articles|length }}</span></a>
+  <a href="#chapter-{{ section.key }}">{{ section.label }}</a>
 {% endfor %}
 </nav>
 
+<div class="guide-sections">
 {% for section in sections %}
-<section class="chapter-section" id="chapter-{{ section.key }}">
-  <div class="chapter-head">
-    <div><span>CHAPTER {{ '%02d'|format(loop.index) }}</span><h2>{{ section.label }}</h2></div>
-    <small>{{ section.articles|length }}개 문서</small>
-  </div>
-  <div class="doc-grid">
+<section class="guide-section" id="chapter-{{ section.key }}">
+  <header class="guide-section-head">
+    <div>
+      <span>0{{ loop.index }}</span>
+      <h2>{{ section.label }}</h2>
+    </div>
+    <small>{{ section.articles|length }}개</small>
+  </header>
+
+  <div class="article-list">
   {% for a in section.articles %}
-    <a class="doc-card" href="{{ a.url }}">
-      <small>{{ a.category_label }}</small>
-      <h2>{{ a.label }}</h2>
-      <p>{{ a.description }}</p>
-      <span>{{ a.excerpt }}</span>
-      <b>열기 →</b>
+    <a class="article-row" href="{{ a.url }}">
+      <div>
+        <b>{{ a.label }}</b>
+        <span>{{ a.description }}</span>
+      </div>
+      <span class="row-arrow">→</span>
     </a>
   {% endfor %}
   </div>
 </section>
 {% endfor %}
+</div>
 {% endblock %}
