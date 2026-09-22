@@ -1,45 +1,55 @@
 {% extends 'base.html' %}
 {% block title %}TWW3 개인 공략 위키{% endblock %}
 {% block content %}
-<section class="hero compact-hero">
+<section class="page-hero home-hero">
   <p class="eyebrow">TOTAL WAR: WARHAMMER III</p>
-  <h1>종족별로 보고,<br><em>전투 중엔 바로 꺼내봅니다.</em></h1>
-  <p>채팅에서 쌓인 공략을 종족·주제별 챕터로 정리한 개인 위키입니다. 세부 파일 이름은 잊으셔도 됩니다.</p>
-  <button class="hero-search" data-search-open>⌕ 전체 공략 검색</button>
+  <h1>필요한 공략만<br><em>빠르게 꺼내봅니다.</em></h1>
+  <p>종족을 고르고 → 주제를 고르고 → 필요한 내용만 읽는 구조입니다.</p>
+  <button class="primary-action" data-search-open>⌕ 전체 공략 검색</button>
 </section>
 
-<section class="home-block">
-  <div class="section-title"><div><span>FACTIONS</span><h2>종족 선택</h2></div></div>
+<section class="section-block">
+  <div class="section-heading">
+    <div><span>FACTIONS</span><h2>종족 선택</h2></div>
+  </div>
+
   <div class="faction-grid">
   {% for key, faction in factions.items() %}
     {% set cnt = articles|selectattr('faction','equalto',key)|list|length %}
     <a class="faction-card faction-{{ key }}" href="{{ key }}.html">
       <span class="faction-icon">{{ faction.icon }}</span>
-      <div><small>{{ cnt }}개 공략</small><h2>{{ faction.name }}</h2><p>{{ faction.tagline }}</p></div>
-      <span class="arrow">↗</span>
+      <div class="faction-copy">
+        <small>{{ cnt }}개 공략</small>
+        <h2>{{ faction.name }}</h2>
+        <p>{{ faction.tagline }}</p>
+      </div>
+      <span class="arrow">→</span>
     </a>
   {% endfor %}
   </div>
 </section>
 
-<section class="home-block">
-  <div class="section-title"><div><span>RECENT</span><h2>최근 업데이트</h2></div></div>
-  <div class="update-list">
-  {% for a in recent_articles %}
-    <a class="update-row" href="{{ a.url }}">
-      <span class="update-faction">{{ factions[a.faction].icon }}</span>
-      <div><b>{{ a.label }}</b><small>{{ a.faction_short }} · {{ a.description }}</small></div>
-      <time>{{ a.updated }}</time>
-    </a>
-  {% endfor %}
+<section class="section-block">
+  <div class="section-heading">
+    <div><span>QUICK START</span><h2>한 번에 들어가기</h2></div>
   </div>
-</section>
 
-<section class="home-block">
-  <div class="section-title"><div><span>QUICK REFERENCE</span><h2>핵심 치트시트</h2></div></div>
-  <div class="quick-grid">
-  {% for a in quick_articles %}
-    <a class="quick-card" href="{{ a.url }}"><span>{{ factions[a.faction].icon }}</span><div><b>{{ a.label }}</b><small>{{ a.faction_short }} · {{ a.description }}</small></div></a>
+  <div class="overview-grid">
+  {% for key, faction in factions.items() %}
+    <section class="overview-panel">
+      <header>
+        <span class="sigil large">{{ faction.icon }}</span>
+        <div><small>{{ faction.name }}</small><h3>{{ faction.short }} 핵심 메뉴</h3></div>
+      </header>
+      <div class="overview-links">
+      {% for section in nav_sections[key] %}
+        <a href="{{ key }}.html#chapter-{{ section.key }}">
+          <span>{{ section.label }}</span>
+          <small>{{ section.articles|length }}</small>
+        </a>
+      {% endfor %}
+      </div>
+    </section>
   {% endfor %}
   </div>
 </section>
